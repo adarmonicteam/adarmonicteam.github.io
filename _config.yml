@@ -1,11 +1,11 @@
 # basic options
-title: Are Russian Trolls Good at their Jobs? The 2016 U.S. Elections: A Timeline Analysis
-author: Us
-email: flavio.martinelli.95@gmail.com
-description: A wonderful site
-twitter_username: jekyllrb
-github_username:  jekyll
+title: "Are Russian Trolls Good at their Jobs? The 2016 U.S. Elections: A Timeline Analysis"
+author: "Us"
+email: "flavio.martinelli.95@gmail.com"
+description: "A wonderful site"
+twitter_username: "jekyllrb"
+github_username:  "jekyll"
 
 # Build settings
-markdown: kramdown
-theme: jekyll-theme-cayman
+markdown: "kramdown"
+theme: "jekyll-theme-cayman"
