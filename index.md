@@ -1,4 +1,4 @@
-## Are Russian Trolls Good at their Jobs?
+## Are Russian Trolls G88d at their Jobs?
 
 {% include test.html %}
 
