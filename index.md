@@ -15,7 +15,7 @@ The Trolls were able to gain the attention of the masses via various strategies.
 
 - A second strategy includes targetting specific populations of people. One of the most prominent that was found was that of the African-American population, which is a politically relevant community. Interestingly, when topic categorization was applied to analyze the types of tweets that were being released, the states which higher percentages of African-Americans correlated with the percent of Black-related tweets that were released by the Trolls.
 
-{% include blackstates.html %}
+{% include blackstates.html %} {% include blackstateswiki.html %}
 
 
 
