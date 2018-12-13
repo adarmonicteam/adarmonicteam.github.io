@@ -1,6 +1,5 @@
 # Are Russian Trolls Good at their Jobs? The U.S. Presidential Elections: A Timeline Analysis
 
-{% include test.html %}
 
 ### Who Are the Russian Trolls?
 
@@ -10,6 +9,13 @@ It is currently under investigation whether during the 2016 U.S. elections a Rus
 
 The Trolls were able to gain the attention of the masses via various strategies.
 
+- One strategy was through exploiting popular and controversial events that occured either in America or internationally. As can be seen in the line plot below which ranges up to one year before the presidential election, there are distinct spikes that we have shown to be correlated to events.
+
+{% include topics1.html %}
+
+- A second strategy includes targetting specific populations of people. One of the most prominent that was found was that of the African-American population, which is a politically relevant community. Interestingly, when topic categorization was applied to analyze the types of tweets that were being released, the states which higher percentages of African-Americans correlated with the percent of Black-related tweets that were released by the Trolls.
+
+{% include blackstates.html %}
 
 
 
