@@ -1,14 +1,18 @@
-## Are Russian Trolls G88d at their Jobs?
+# Are Russian Trolls Good at their Jobs? The U.S. Presidential Elections: A Timeline Analysis
 
 {% include test.html %}
 
-You can use the [editor on GitHub](https://github.com/adarmonicteam/adarmonicteam.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+### Who Are the Russian Trolls?
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+It is currently under investigation whether during the 2016 U.S. elections a Russian 'troll factory', the IRA, released a number of tweets from fraudulent Twitter accounts. These tweets potentially influenced the population of voters by spreading statements, some of which were fake. The aim of this project is to better understand the strategy of the trolls by retrieving the main subjects of these tweets over time and categorizing them according to their targeted social, geographical, or political group. Quantifing the potential impact of those tweets and providing a link to specific events that were occuring in the United States at the time are the objectives.
 
-### Markdown
+### Gaining Popularity
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The Trolls were able to gain the attention of the masses via various strategies.
+
+
+
+
 
 ```markdown
 Syntax highlighted code block
