@@ -1,5 +1,4 @@
-# Are Russian Trolls Good at their Jobs? 
-## The U.S. Presidential Elections: A Timeline Analysis
+# Are Russian Trolls Good at their Jobs? The U.S. Presidential Elections: A Timeline Analysis
 
 
 ### Who Are the Russian Trolls?
