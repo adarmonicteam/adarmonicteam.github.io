@@ -1,4 +1,4 @@
-# Are Russian Trolls Good at their Jobs? The U.S. Presidential Elections: A Timeline Analysis
+## Are Russian Trolls Good at their Jobs? The U.S. Presidential Elections: A Timeline Analysis
 
 
 ### Who Are the Russian Trolls?
@@ -19,21 +19,3 @@ The Trolls were able to gain the attention of the masses via various strategies.
 {% include blackstateswiki.html %}
 
 3. Another strategy that was attempted was to reply to popular twitter authors such as **midnight** that are followed by a significant proportion of the American people. However, given the fact that only individuals who follow both the Troll who replied *and* the author to which the reply was made can see the reply, this tactic may have not been the best in terms of gaining an audience. For this reason the number of replies remains relatively low. (Does it drop off as time goes by?)
-
-
-
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/adarmonicteam/adarmonicteam.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
