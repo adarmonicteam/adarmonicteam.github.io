@@ -15,7 +15,8 @@ An analysis of the types of languages that were tweeted reveals that Russian and
 ### Modelling Topics
 
 In order to gain a better understanding of what the Trolls were posting about, a neural network was trained to recognize 11 topics that we deemed to be the most dominant based on the most common hashtags. This is hence a supervised learning approach. These topics include the following:
-- **Trump**. {% include hover.html %} Include any reference to Trump 
+{% include hover.html %}
+- **Trump**. Include any reference to Trump 
 - **Trump Adversaries**. Include references to any political figure against Trump. Tweets in this category are commonly against Hillary Clinton or Obama.
 - **Black**. Include any reference the African-American population
 - **Patriot**. Includes tweets related to support of the NRA and the army
