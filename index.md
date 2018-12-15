@@ -1,6 +1,6 @@
 ## Who Are the Russian Trolls?
 
-It is currently under investigation whether during the 2016 U.S. elections a Russian 'troll factory', the IRA, released a number of tweets from fraudulent Twitter accounts. These tweets potentially influenced the population of voters by spreading statements, some of which were fake. The aim of this project is to better understand the strategy of the trolls by retrieving the main subjects of these tweets over time and categorizing them according to their targeted social, geographical, or political group. Quantifing the potential impact of those tweets and providing a link to specific events that were occuring in the United States at the time are the objectives.
+It is currently under investigation whether during the 2016 U.S. elections a Russian 'troll factory', the IRA, released a number of tweets from fraudulent Twitter accounts. These tweets potentially influenced the population of voters by spreading statements, some of which were fake. The aim of this analysis is to better understand the strategy of the trolls by retrieving the main subjects of these tweets over time and categorizing them according to their targeted social, geographical, or political group. Quantifing the potential impact of those tweets and providing a link to specific events that were occuring in the United States at the time are the objectives.
 
 ## Introduction
 
@@ -31,10 +31,10 @@ The Trolls were able to gain the attention of the masses via various strategies.
 
 - One strategy was through exploiting popular and controversial events that occured either in America or internationally. As can be seen in the line plot below which ranges up to one year before the presidential election, there are distinct spikes that we can show to be correlated to events by reading specific tweets in the specific time periods. Examples include the following:
 
-1. On November 11th 2015, there is a spike in the topic Foreign Countries. From inspection of the tweets, this is most likely attributable to the coordinated terrorist attacks that took place in Paris.
-2. During the week of February 29th 2016, there is a peak in the topic related to African-Americans. The Oscars ceremony of 2016 was supposedly a very controversial ceremony, due to the fact that there were no black actors that were nominated. The Russian Trolls took advantage of this event to gain potential followers.
-3. On March 19th 2016, there is a sharp increase in the topic Islam. This is the date of the bombing in Brussels, which is believed to have been related to ISIS. Tweets related to this event show strong anti-immigration sentiments.
-4. On September 26th, the Trump Adversary topic sees its greatest spike. This was cooincidently the date of the first presidential debate between Donald Trump and Hillary Clinton.
+1. On **November 11th 2015**, there is a spike in the topic Foreign Countries. From inspection of the tweets, this is most likely attributable to the coordinated terrorist attacks that took place in Paris.
+2. During the week of **February 29th 2016**, there is a peak in the topic related to African-Americans. The Oscars ceremony of 2016 was supposedly a very controversial ceremony, due to the fact that there were no black actors that were nominated. The Russian Trolls took advantage of this event to gain potential followers.
+3. On **March 19th 2016**, there is a sharp increase in the topic Islam. This is the date of the bombing in Brussels, which is believed to have been related to ISIS. Tweets related to this event show strong anti-immigration sentiments.
+4. On **September 26th**, the Trump Adversary topic sees its greatest spike. This was cooincidently the date of the first presidential debate between Donald Trump and Hillary Clinton.
 
 {% include topics1.html %}
 
@@ -48,6 +48,10 @@ When a correlation coefficient is calculated that quantifies the relationship be
 
 - Another strategy that was attempted was to reply to popular twitter authors such as **midnight** that are followed by a significant proportion of the American people. However, given the fact that only individuals who follow both the Troll who replied *and* the author to which the reply was made can see the reply, this tactic may have not been the best in terms of gaining an audience. For this reason the number of replies remains relatively low. (Does it drop off as time goes by?)
 
+- One approach that had racked up a large quantity of followers was the creation of twitter counts that impersonated a real individual rather than accounts named in a news-related fashion. A notable example is the author jenn_abrams, a Troll account which was depicted to be a woman in her 30's that supported Trump. This account managed to attain a maximum follower count of 61759 during the period under inspection.
+
+- These observations together show that a number of tactics were implemented by the Trolls, some of which were initiated without knowing what exactly would happen. In the next section, we will attempt to quantify the success of the Trolls, and later try to understand better how they targetted different states.
+
 ## Timeline Insights and Quantifying Success
 
 From the following plot, it is clear that the general increase in followers cannot be attributed to an increase in tweets, nor increase in active authors. What could the increase in followers be attributed to? Are they real people? Or perhaps they are the Trolls themselves, including bots that may have been set up? To help answer this question, the statistics on the number of 'likes' were retrieved. 'Likes' have the potential to be considered as an indicator of Troll success - i.e. if they were able to get through to the general public. Here we see that the number of 'likes' skyrockets from 50,000 to 150,000 at the start of September, 2 months before the election. These numbers make sense, as there are approximately 200,000-400,000 followers during this period. 
@@ -60,10 +64,7 @@ To better understand what topics were being 'liked', the model for topic predict
 
 ## Targetting Specific States
 
-- From inspecting the names of the most active authors, it became clear that there are a number of author names which come across as neutral, news-related feeds. Examples of these include HOUSTONTOPNEWS and DAILYLOSANGELES. It is reasonable to assume that these accounts were created to target the population of cities in their respective names. In order to quantify this better, the following map was generated to visualize the number of tweets released in each state after filtering for cities and states contained in the author names. 
-
-
-The map shows that the swing states of 2016 almost always had their own 'dedicated' Troll. On the other hand, several states that may not have been considered important to the Trolls did not have their own news account. 
+- From inspecting the names of the most active authors, it became clear that there are a number of author names which come across as neutral, news-related feeds. Examples of these include HOUSTONTOPNEWS and DAILYLOSANGELES. It is reasonable to assume that these accounts were created to target the population of cities in their respective names. In order to quantify this better, the following map was generated to visualize the number of tweets released in each state after filtering for cities and states contained in the author names. The map shows that the swing states of 2016 almost always had their own 'dedicated' Troll. On the other hand, several states that may not have been considered important to the Trolls did not have their own news account. 
 
 {% include authorstate.html %}
 
