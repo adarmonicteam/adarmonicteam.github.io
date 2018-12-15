@@ -2,7 +2,7 @@
 
 It is currently under investigation whether during the 2016 U.S. elections a Russian 'troll factory', the IRA, released a number of tweets from fraudulent Twitter accounts. These tweets potentially influenced the population of voters by spreading statements, some of which were fake. The aim of this analysis is to better understand the strategy of the trolls by retrieving the main subjects of these tweets over time and categorizing them according to their targeted social, geographical, or political group. Quantifing the potential impact of those tweets and providing a link to specific events that were occuring in the United States at the time are the objectives.
 
-![useful image](https://adarmonicteam.github.io//images//blackcloud.png)
+![useful image](https://adarmonicteam.github.io//assets//images//blackcloud.png)
 
 ## Introduction
 
