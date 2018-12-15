@@ -54,3 +54,9 @@ From inspecting the names of the most active authors, it became clear that there
 The map shows that the swing states of 2016 almost always had their own 'dedicated' Troll. On the other hand, several states that may not have been considered important to the Trolls did not have their own news account. 
 
 {% include authorstate.html %}
+
+## Do the trolls target specific states?
+
+To better understand how do the trolls operate we wanted to see if they target specific states.
+
+
