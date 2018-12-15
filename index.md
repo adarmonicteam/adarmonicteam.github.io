@@ -6,6 +6,9 @@ It is currently under investigation whether during the 2016 U.S. elections a Rus
 
 ## Introduction
 
+{% include <div class="image-hover"><p>Hover the text</p></div> %}
+
+
 ### Languages
 
 An analysis of the types of languages that were tweeted reveals that Russian and English are the main languages. Interestingly, Spanish is not in this list even though it is the second most prominent language in the United States. The reason for this remains unclear. Since English is spoken by 72% of individuals in the U.S., our project focuses only on the tweets written in English. The following section will describe the models that were created for further analysis.
