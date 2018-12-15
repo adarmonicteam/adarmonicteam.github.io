@@ -12,8 +12,12 @@ An analysis of the types of languages that were tweeted reveals that Russian and
 
 ### Modelling Topics
 
-In order to gain a better understanding of what the Trolls were posting about, a neural network was trained to recognize 11 topics that we deemed to be the most dominant based on the types of hashtags
-
+In order to gain a better understanding of what the Trolls were posting about, a neural network was trained to recognize 11 topics that we deemed to be the most dominant based on the most common hashtags. These topics include the following:
+- **Trump**. Include any reference to Trump 
+- **Black**. Include any reference the African-American population
+- **Crime**. Involve a type of criminal offense
+- **Sports**. Relate to any sports-related activity including events related to games and players, 
+- **Entertainment**. Include events 
 
 ## Gaining Viewers
 
@@ -49,4 +53,4 @@ From inspecting the names of the most active authors, it became clear that there
 
 The map shows that the swing states of 2016 almost always had their own 'dedicated' Troll. On the other hand, several states that may not have been considered important to the Trolls did not have their own news account. 
 
-{% authorstate.html %}
+{% include authorstate.html %}
