@@ -12,12 +12,18 @@ An analysis of the types of languages that were tweeted reveals that Russian and
 
 ### Modelling Topics
 
-In order to gain a better understanding of what the Trolls were posting about, a neural network was trained to recognize 11 topics that we deemed to be the most dominant based on the most common hashtags. These topics include the following:
+In order to gain a better understanding of what the Trolls were posting about, a neural network was trained to recognize 11 topics that we deemed to be the most dominant based on the most common hashtags. This is hence a supervised learning approach. These topics include the following:
 - **Trump**. Include any reference to Trump 
+- **Trump Adversaries**. Include references to any political figure against Trump. Tweets in this category are commonly against Hillary Clinton or Obama.
 - **Black**. Include any reference the African-American population
+- **Patriot**. Includes tweets related to support of the NRA and the army
 - **Crime**. Involve a type of criminal offense
-- **Sports**. Relate to any sports-related activity including events related to games and players, 
-- **Entertainment**. Include events 
+- **Sports**. Includes any sports-related activity including events related to games, players and coaches 
+- **Entertainment**. Include events related to celebrities, music and sometimes controversial topics
+- **Health**. Includes tweets related health in general such as health insurance, going to the gym and food
+- **Islam**. Involves anything against Islam, notably ISIS and bombings that occured internationally
+- **Foreign Countries**. Includes tweets interested in international affairs and world news
+- **Fukukshima**. A hashtag that appeared multiple times. It was quite distinct so we decided to give it its own topic
 
 ## Gaining Viewers
 
@@ -47,20 +53,17 @@ To better understand what topics were being 'liked', the model for topic predict
 
 {% include generalinfolikes.html %}
 
-## Who are the Authors?
+## Targetting Specific States
 
-From inspecting the names of the most active authors, it became clear that there are a number of author names which come across as neutral, news-related feeds. Examples of these include HOUSTONTOPNEWS and DAILYLOSANGELES. It is reasonable to assume that these accounts were created to target the population of cities in their respective names. In order to quantify this better, the following map was generated to visualize the number of tweets released in each state after filtering for cities and states contained in the author names. 
+- From inspecting the names of the most active authors, it became clear that there are a number of author names which come across as neutral, news-related feeds. Examples of these include HOUSTONTOPNEWS and DAILYLOSANGELES. It is reasonable to assume that these accounts were created to target the population of cities in their respective names. In order to quantify this better, the following map was generated to visualize the number of tweets released in each state after filtering for cities and states contained in the author names. 
 
 The map shows that the swing states of 2016 almost always had their own 'dedicated' Troll. On the other hand, several states that may not have been considered important to the Trolls did not have their own news account. 
 
 {% include authorstate.html %}
 
-## Do the trolls target specific states?
+- To better understand how do the trolls operate we wanted to see if they target specific states in the context of the tweet content itself. For each month in the dataset we filtered the number of tweets for each account category mentioning specific states or cities within those states. 
 
-To better understand how do the trolls operate we wanted to see if they target specific states.
-For each month in the dataset we filtered the number of tweets for each account category mentioning specific states or cities within those states. 
-
-Here are the maps for the RightTrolls and the LeftTrolls.
+Below are the maps for the Right Trolls and the Left Trolls.
 
 {% include left_troll_tweet_number.html %}
 
