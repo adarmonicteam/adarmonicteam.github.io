@@ -6,6 +6,15 @@ It is currently under investigation whether during the 2016 U.S. elections a Rus
 
 ### Languages
 
+An analysis of the types of languages that were tweeted reveals that Russian and English are the main languages. Interestingly, Spanish is not in this list even though it is the second most prominent language in the United States. The reason for this remains unclear. Since English is spoken by 72% of individuals in the U.S., our project focuses only on the tweets written in English. The following section will describe the models that were created for further analysis.
+
+{% include languages.html %}
+
+### Modelling Topics
+
+In order to gain a better understanding of what the Trolls were posting about, a neural network was trained to recognize 11 topics that we deemed to be the most dominant based on the types of hashtags
+
+
 ## Gaining Viewers
 
 The Trolls were able to gain the attention of the masses via various strategies.
