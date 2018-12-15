@@ -58,5 +58,14 @@ The map shows that the swing states of 2016 almost always had their own 'dedicat
 ## Do the trolls target specific states?
 
 To better understand how do the trolls operate we wanted to see if they target specific states.
+For each month in the dataset we filtered the number of tweets for each account category mentioning specific states or cities within those states. 
+
+Here are the maps for the RightTrolls and the LeftTrolls.
+
+{% include left_troll_tweet_number.html %}
+
+{% include right_troll_tweet_number.html %}
+
+When we inspect the maps we see that in December 2015 there were 1460 tweets mentioning California for the right trolls yet for the same month the left trolls only had 1 tweet mentioning. In December 2015 a mass shooting and an attempted bombing occured in San Bernardino, California resulting in 14 killed and 22 seriously injured. The perpetrators were a married couple with the husband being U.S. born from Pakistani descent and the wife was born in Pakistan. It seems logical for the RightTrolls to tweet about this attack and use it to promote right wing agenda. The RightTroll tweets contained sympathetic tweets such as: "My heart goes out to the victims who were not so lucky  #Prayers4California", pro gun tweets such as: "Guns are our friends because in a country without guns, I'm what's known as "prey." All females are.  #Prayers4California" and "#SanBernardinoShooting displayes how inept and clueless anti-gun lawmakers are. #Prayers4California", criticism of the administration such as: "#ObamaLogic: we can’t defeat ISIS? We definitely must ban guns #Prayers4California" and "Under Obama administration mass shootings happen every month! He wants to cover his ass with gun control! #Prayers4California" and anti muslim tweets such as: "#GunControl but not Muslim control? Jihad a part of Islam when not raping 6 yr old girls  #Prayers4California". While the only LeftTroll tweets was unrelated to the event ("Deliberate act and home terror? Mosque Fire in Coachella, California, Investigated by FBI https://t.co/LSnUmD43Ia").  
 
 
