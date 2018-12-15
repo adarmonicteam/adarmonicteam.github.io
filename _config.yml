@@ -4,3 +4,14 @@ description: ["The 2016 U.S. Presidential Elections: A Timeline Analysis"]
 
 # Build settings
 theme: jekyll-theme-leap-day
+
+# Authors
+author:
+  name: Schede. H, Martinelli. F, Fuhrer. B
+  
+# Select which share links to show in posts
+share-links-active:
+  twitter: true
+  facebook: true
+  google: false
+  linkedin: true
