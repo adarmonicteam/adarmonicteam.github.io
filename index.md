@@ -6,7 +6,7 @@ It is currently under investigation whether during the 2016 U.S. elections a Rus
 
 ## Introduction
 
-{% include <div class="image-hover"><p>Hover the text</p></div> %}
+{% include hover.html %}
 
 
 ### Languages
