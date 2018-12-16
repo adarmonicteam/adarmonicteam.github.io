@@ -240,3 +240,10 @@ Our hypothesis is that the reasons they are always multiple authors for politica
 
 
 - These observations together show that a number of tactics were implemented by the Trolls, some of which were initiated without knowing what exactly would happen. In the following sections, we will attempt to quantify the success of the Trolls, and later try to understand better how they targetted different states. 
+
+
+# Conclusion
+
+This analysis of the Twitter dataset provides insights into many potential strategies that may have been employed by the Russian trolls during the 2016 U.S. presidential election. We show that strategies such as gaining credibility via increasing the number of followers artificially, exploiting particular events to attain viewers, targeting African-American population, releasing larger quantities of tweets to swing-states. Furthermore, our research demonstrates that the trolls may have been dedicated to some tactics more than others. 
+
+We argue that the most reasonable measure of success in terms of reaching out to the American public was by quantifying ‘likes’, which lead to the conclusion that right-wing topics such as pro-Trump and Black-support tended to better obtain the attention of the public.
