@@ -20,7 +20,8 @@ In order to gain a better understanding of what the Trolls were posting about, a
 
 {% include TrumpHover.html %} 
 
-- **Trump Adversaries**. Include references to any political figure against Trump. Tweets in this category are commonly against Hillary Clinton or Obama.
+{% include AdvHover.html %}
+
 - **Black**. Include any reference the African-American population
 - **Patriot**. Includes tweets related to support of the NRA and the army
 - **Crime**. Involve a type of criminal offense
