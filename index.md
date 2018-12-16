@@ -100,13 +100,13 @@ A pearson correlation coefficient of **0.52** is obtained when quantifying the r
 
 - One approach that had racked up a large quantity of followers was the creation of twitter accounts that **impersonated a seemingly real individual** rather than accounts named in a news-related fashion. A notable example is the author JENN_ABRAMS, a Troll account which was [depicted to be a woman in her 30's that supported Trump](https://www.theguardian.com/technology/shortcuts/2017/nov/03/jenna-abrams-the-trump-loving-twitter-star-who-never-really-existed). This account managed to attain a maximum follower count of 61759 during the period under inspection.
 
-- Another strategy that was attempted was to **reply to popular twitter authors** such as *midnight* that are followed by a significant proportion of the American people. However, given the fact that only individuals who follow both the Troll who replied *and* the author to which the reply was made can see the reply, this tactic may have not been the best in terms of gaining an audience. For this reason the number of replies remains relatively low. The analysis was conducted by extracting unique users that were mentioned in tweets and quantifying their occurences. It appears that trolls do not tend to mention eachother - only 13 trolls were shown to name another fellow troll. The accounts belonging to these 13 trolls are categorized as HashtagGamer. Additionally, other than the leading 3 trolls, they are mentioned only a few times.
+- Another potential strategy that we investigated was the act of **replying to popular Twitter authors** such as *@midnight* that are followed by a significant proportion of the American people. However, given the fact that only individuals who follow both the Troll who replied *and* the author to which the reply was made can see the reply, this tactic may have not been the best in terms of gaining an audience. For this reason the number of replies remains relatively low. The analysis was conducted by extracting unique users that were mentioned in tweets and quantifying their occurences. It also appears that trolls do not tend to mention eachother - only 13 trolls were shown to name another fellow troll. The accounts belonging to these 13 trolls are categorized as HashtagGamer. Additionally, other than the leading 3 trolls, they are mentioned less than ten times.
 
 ![image1](https://adarmonicteam.github.io/assets/images/trolls_mentioning_other_trolls.png)
 
 For the top 3 users, the 10 tweets with the most replies, likes and retweets were analyzed. These tweets did not have a particular “trolling” message. Additionally, some of the tweets were identical for all users, with tweets such as: “#ThingsIWontBelieve this church sign (link to picture)” and “#IHatePokemonGoBecause There will be more distracted drivers”.
 
-Only in the 10 tweets with the most replies did we see some tweets with a poitical side such as: 
+Only in the 10 tweets with the most replies did we see some tweets with a political side such as: 
   > Obama is elected the 3rd time #MakeMeMadIn5Words
   
   and
@@ -117,7 +117,7 @@ Only in the 10 tweets with the most replies did we see some tweets with a poitic
   
   > #GrowingUpWithObama watching his ugly daughter in all networks
   
-  It should be noted that when the tweet 'Obama being elected for the 3rd time' was investigated, two of the users tweeted it at the same exact time (to the hour). This lead to an investigation which discussed is in the following section. By plotting the histogram of all the users mentioned by the trolls, it becomes evident that the most frequently mentioned user is **@midnight** which is a late-night internet themed panel game show. Users marked in red are those which one would expect to see mentioned (Donald Trump, Hillary Clinton) and the 3 trolls mentioned by other trolls. What we noticed is that in contrast to our expectation they did not mention Hillary Clinton nor Donald Trump all that much (around 200 tweets out of more than a million). 
+  It should be noted that when the tweet 'Obama being elected for the 3rd time' was investigated, two of the users tweeted it at the same exact time. This lead to further inquiries which are discussed in the following section. By plotting the histogram of all the users mentioned by the trolls, it becomes evident that the most frequently mentioned user is **@midnight** which is a late-night internet themed panel game show. Users marked in red are those which one would expect to see mentioned (Donald Trump, Hillary Clinton) and the 3 trolls mentioned by other trolls. What we noticed is that in contrast to our expectation they did not mention Hillary Clinton nor Donald Trump all that much (around 200 tweets out of more than a million). 
 
 ![image2](https://adarmonicteam.github.io/assets/images/mentioned_users.png)
 
@@ -125,7 +125,7 @@ Only in the 10 tweets with the most replies did we see some tweets with a poitic
 
 We were interested to see if tweet contents are repeated several times. In order to do so, the data was filtered to only contain tweets that were not labeled as a retweet. The findings were that there are 16,707 tweets that appear more than once in the entire dataset, while there are 27 tweets that appear more than 15 times. The following analysis focuses on these 27 tweets.
 
-We were interested in quantifying the difference between politically-related topics and non-politically related topics with respect to duplicate tweets from distinct authors. We show that politically-related tweets tend to have larger numbers of distinct authors that post them, while non-politically related tweets tend to stick with a single author. The distinct dates that the tweets were released were also kept track of.
+We were interested in quantifying the difference between politically-related topics and non-politically related topics with respect to duplicate tweets from distinct authors. We show that **politically-related tweets tend to have larger numbers of distinct authors** that post them, while non-politically related tweets tend to stick with a single author. The distinct dates that the tweets were released were also kept track of.
 
 As the tweets are too long to show on any figure we created the following mapping:
 - **Tweet 1**: *NewsOne Now Audio Podcast: Bishop E.W. Jackson Calls #BlackLivesMatter Is Movement “Disgraceful”*
@@ -156,21 +156,12 @@ As the tweets are too long to show on any figure we created the following mappin
 - **Tweet 26**: *RT @mitchellvii: #BlackLivesMatter is like a 24/7 advertisement for what a HORRIBLE DIVIDER Obama has been. Thanks guys, that much stupid*
 - **Tweet 27**: *RT @JaredWyand: Ive had death threats by HUNDREDS of #BlackLivesMatter activists this year  Ive killed 0 people  #IslamIsTheProblem*
 
-We can see the results in the bar plot below (political tweets are labeled in red)
-
-![image3](https://adarmonicteam.github.io//assets//images//number_duplicates.png)
-
-We noticed that no political tweet has more than 1 distinct author! To further investigate we plotted the number of distinct authors as a function of number of distinct dates for each tweet.
-
-![image4](https://adarmonicteam.github.io//assets//images//scatter.png)
-
-The scatter plot confirmed our believes that there is a clear difference between political tweets and non-political tweets.
-
-We decided to take the tweets that appear  5 times or more (869 tweets) and re-do the same analysis automatically using our topic classifier. We classified all the tweets with topics (Crime/Sports/Entertainment/Health) as non-political and all the rest as political. 
+By extracting tweets which appear at least 5 times (869 tweets) and by applying the topic categorization model to classify political (Trump-related, Trump adversaries, patriot, Black-related, Islam and foreign countries) versus non-political (sports, entertainment, health, crime) tweets we were able to increase the number of samples in the following scatter plot. 
+We noticed that non-political tweets generally have few authors. A scatter plot of the number of distinct authors as a function of number of distinct dates for each tweet was generated. The scatter plot indicates that there is a difference between political tweets and non-political tweets. 
 
 ![image5](https://adarmonicteam.github.io//assets//images//scatter2.png)
 
-We do see the same behavior from the political tweets, with some change in behavior for the non-political tweets. We decided to test statistical significance using the Wilcoxon signed-rank test (as we do not assume Gaussian distribution) on the number of distinct authors, as we feel that it is a better indicator for the difference between the two behaviors). The test resulted with a p-value of 1.5047361860066575e-09 showing statistical significane and that the political tweets and non-political tweets exhibit different behavior. We do not know if the change in behavior of the non-political tweets is due to misclassification of our classifier or due to the behavior of the trolls.
+We do see the same behavior from the political tweets, with some change in behavior for the non-political tweets. We decided to test statistical significance using the Wilcoxon signed-rank test (as we do not assume Gaussian distribution) on the number of distinct authors, as we feel that it is a better indicator for the difference between the two behaviors). The test resulted with a p-value of 1.50e-09 showing statistical significane and that the political tweets and non-political tweets exhibit different behavior. We do not know if the change in behavior of the non-political tweets is due to misclassification of our classifier or due to the behavior of the trolls.
 
 Our hypothesis is that the reasons they are always multiple authors for political tweets is that the trolls had a database of tweets to use. As all political tweets have less than 20 distinct dates we believe they are coordinated to some extent.
 
