@@ -24,8 +24,8 @@ In order to gain a better understanding of what the Trolls were posting about, a
 
 {% include BlackHover.html %}
 
-- **Black**. Include any reference the African-American population
-- **Patriot**. Includes tweets related to support of the NRA and the army
+{% include PatHover.html %}
+
 - **Crime**. Involve a type of criminal offense
 - **Sports**. Includes any sports-related activity including events related to games, players and coaches 
 - **Entertainment**. Include events related to celebrities, music and sometimes controversial topics
