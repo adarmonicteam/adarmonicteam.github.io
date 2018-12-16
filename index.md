@@ -90,3 +90,26 @@ We wanted to investigate who do the users mention in particular if they mention 
 ![image1](https://github.com/adarmonicteam/adarmonicteam.github.io/blob/master/assets/images/trolls_mentioning_other_trolls.png)
 ![image2](https://github.com/adarmonicteam/adarmonicteam.github.io/blob/master/assets/images/mentioned_users.png)
 
+## Do trolls re-write the same tweet?
+We were interested to see if tweet contents are repeated several times. In order to do that we filtered the data to only contain tweets that were not labeled as a retweet and found that there are 16,707 tweets that appear more than once, 170 tweets that appear more than 10 times and 8 tweets that appear more than 30 times which are the tweets we focus on.  
+As the tweets are too long to show on any figure we created the following mapping:
+	Tweet 1: “NewsOne Now Audio Podcast: Bishop E.W. Jackson Calls #BlackLivesMatter Is Movement “Disgraceful””
+	Tweet 2: “Honor scores  #sports”
+	Tweet 3: “SE Wis. road construction projects  #Wisconsin”
+	Tweet 4: “Celebrity style: Red carpet looks  #celebs #news”
+	Tweet 5: “Daily Celebrity Watch  #celebs #news”
+	Tweet 6: “RT @thehill: Trump repeatedly interrupted by protesters shouting #BlackLivesMatter”
+	Tweet 7: “On the Air  #sports”
+	Tweet 8: “Judge Rips Media”
+
+As one can see these tweets target the BlackLivesMatter movement or news (sports and entertainment). We quantified how many times each one of these tweets appeared in the data with Tweet 1 appearing more than 200 times and Tweets 2 and 3 are above 100 and almost 100 times respectively. 
+
+![image3](https://github.com/adarmonicteam/adarmonicteam.github.io/blob/master/assets/images/number_duplicates.png)
+
+We wanted to further investigate so we looked at how many unique authors wrote each tweet resulting with tweets 1,8 and 6 being written by several authors and all other tweets being only written by the same author. Tweets 1, 8, 6 interestingly enough have a political orientation while the tweets that were written by only 1 author seem to be more related to the category account of tweets (Sports, NewsFeed, etc.) hinting that there maybe was pre-written tweets distributed between trolls. 
+
+![image4](https://github.com/adarmonicteam/adarmonicteam.github.io/blob/master/assets/images/number_duplicates_authors.png)
+
+We also wanted to see the times at which these tweets were published so we took only the date of the tweet (without separating the exact time) and looked at how many unique dates does each tweet have. This resulted in all of them having several unique dates with the lowest being tweets 8, 1, and 6 respectively. The fewer unique dates the more it seems as these tweets were written in coordination between authors whilst the other tweets maybe did not always have something to tweet about resulting in just re-tweeting something in order to keep their account active.
+
+![image5](https://github.com/adarmonicteam/adarmonicteam.github.io/blob/master/assets/images/number_duplicates_dates.png)
