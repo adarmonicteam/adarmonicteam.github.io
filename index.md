@@ -167,7 +167,7 @@ A potential hypothesis for the fact that politically-related tweets tend to have
 
 ### Targetting Specific States
 
-- There is a particular interest in the [swing states](https://constitutioncenter.org/blog/what-are-the-really-swing-states-in-the-2016-election/), as they include the population of voters that are not necessarily sure for which candidate to vote. The forecast of which states will be swing states in a given year is based on historical trends. For this reason they are considered by many the most relevant states to pursue during presidential campaigns. The definite and potential swing states of the 2016 U.S. election were forecasted to be:
+- There is a particular interest in the [swing states](https://constitutioncenter.org/blog/what-are-the-really-swing-states-in-the-2016-election/), as they include the population of voters that are not necessarily sure for which candidate to vote. The forecast of which states will be swing states in a given year is based on historical trends. For this reason they are considered by many to be the most relevant states to pursue during presidential campaigns. The definite and potential swing states of the 2016 U.S. election were forecasted to be:
   - Colorado
   - Florida
   - Iowa
