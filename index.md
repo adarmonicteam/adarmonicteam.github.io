@@ -1,6 +1,6 @@
 ## Who Are the Russian Trolls?
 
-It is currently under investigation whether during the 2016 U.S. elections a Russian 'troll factory', the Internet Research agency (IRA) based in St. Petersburg, released a number of tweets from fraudulent Twitter accounts. These tweets potentially influenced the population of voters by spreading statements, some of which were fake. The aim of this analysis is to better understand the strategy of the trolls by retrieving the main subjects of these tweets over time and categorizing them according to their targeted social, geographical, or political group. Quantifing the potential impact of those tweets and providing a link to specific events that were occuring in the United States at the time are the objectives.
+It is currently under investigation whether during the 2016 U.S. elections a Russian 'troll factory', the **Internet Research agency (IRA)** based in St. Petersburg, released a number of tweets from fraudulent Twitter accounts. These tweets potentially influenced the population of voters by spreading statements, some of which were fake. The aim of this analysis is to better understand the strategy of the trolls by retrieving the main subjects of these tweets over time and categorizing them according to their targeted social, geographical, or political group. Quantifing the potential impact of those tweets and providing a link to specific events that were occuring in the United States at the time are the objectives.
 
 ## Introduction
 
@@ -10,13 +10,13 @@ The Russian internet trolls targetted a number of social media services such as 
 
 ### Languages
 
-An analysis of the types of languages that were tweeted reveals that Russian and English are the main languages. Interestingly, Spanish is not in this list even though it is the second most prominent language in the United States. The reason for this remains unclear. Since English is spoken by 72% of individuals in the U.S., our project focuses only on the tweets written in English. The following section will describe the models that were created for further analysis.
+An analysis of the types of languages that were tweeted reveals that **Russian** and **English** are the main languages. Interestingly, Spanish is not in this list even though it is the second most prominent language in the United States. The reason for this remains unclear. Since English is spoken by 72% of individuals in the U.S., our project focuses only on the tweets written in English. The following section will describe the models that were created for further analysis.
 
 {% include languages.html %}
 
 ### Modelling Topics
 
-In order to gain a better understanding of what the Trolls were posting about, a neural network was trained to recognize 11 topics that we deemed to be the most dominant based on the most common hashtags. This is hence a supervised learning approach. The neural net was implemented in PyTorch and trained using Google CoLab's Tesla K80 GPU. The net has three hidden layers - the first, second and third layers have 6000, 1000 and 100 neurons, respectively. The model was shown to have an accuracy of 85% through an evaluation on a test set. The list of topics is given below. **Try hovering over the topic description** for a graphical representation of the most tweeted words in a given topic.
+In order to gain a better understanding of what the Trolls were posting about, a **neural network** was trained to recognize 11 topics that we deemed to be the most dominant based on the most common hashtags. This is hence a supervised learning approach. The neural net was implemented in PyTorch and trained using Google CoLab's Tesla K80 GPU. The net has three hidden layers - the first, second and third layers have 6000, 1000 and 100 neurons, respectively. The model was shown to have an accuracy of 85% through an evaluation on a test set. The list of topics is given below. **Try hovering over the topic description** for a graphical representation of the most tweeted words in a given topic.
 
 
 
@@ -46,7 +46,7 @@ In order to gain a better understanding of what the Trolls were posting about, a
 
 The Trolls were able to gain the attention of the masses via various strategies.
 
-- One strategy was through exploiting popular and controversial events that occured either in America or internationally. As can be seen in the line plot below which ranges up to one year before the presidential election, there are distinct spikes that we can show to be correlated to events by reading specific tweets in the specific time periods. Examples include the following for the most followed accounts:
+- One strategy was through **exploiting popular and controversial events** that occured either in America or internationally. As can be seen in the line plot below which ranges up to one year before the presidential election, there are distinct spikes that we can show to be correlated to events by reading specific tweets in the specific time periods. Examples include the following for the most followed accounts:
 
 1. On **November 11th 2015**, there is a spike in the topic Foreign Countries. From inspection of the tweets, this is most likely attributable to the coordinated terrorist attacks that took place in Paris.
   > You may not be at war with Islam, but Islam is at war with you   #ISIS 
@@ -66,7 +66,7 @@ The Trolls were able to gain the attention of the masses via various strategies.
 
 {% include topics1.html %}
 
-- A second strategy includes targetting specific populations of people. One of the most prominent that was found was that of the African-American population, which is a politically relevant community. Interestingly, when topic categorization was applied to analyze the types of tweets that were being released, the states which higher percentages of African-Americans correlated with the percent of Black-related tweets that were released by the Trolls.
+- A second strategy includes **targetting specific populations** of people. One of the most prominent that was found was that of the African-American population, which is a politically relevant community. Interestingly, when topic categorization was applied to analyze the types of tweets that were being released, the states which higher percentages of African-Americans correlated with the percent of Black-related tweets that were released by the Trolls.
 
 {% include blackstates.html %} 
 
@@ -74,11 +74,11 @@ When a correlation coefficient is calculated that quantifies the relationship be
 
 {% include BlackCorrelation.html %}
 
-- Another strategy that was attempted was to reply to popular twitter authors such as **midnight** that are followed by a significant proportion of the American people. However, given the fact that only individuals who follow both the Troll who replied *and* the author to which the reply was made can see the reply, this tactic may have not been the best in terms of gaining an audience. For this reason the number of replies remains relatively low. (Does it drop off as time goes by?)
+- Another strategy that was attempted was to **reply to popular twitter authors** such as *midnight* that are followed by a significant proportion of the American people. However, given the fact that only individuals who follow both the Troll who replied *and* the author to which the reply was made can see the reply, this tactic may have not been the best in terms of gaining an audience. For this reason the number of replies remains relatively low. (Does it drop off as time goes by?)
 
-- One approach that had racked up a large quantity of followers was the creation of twitter counts that impersonated a real individual rather than accounts named in a news-related fashion. A notable example is the author jenn_abrams, a Troll account which was depicted to be a woman in her 30's that supported Trump. This account managed to attain a maximum follower count of 61759 during the period under inspection.
+- One approach that had racked up a large quantity of followers was the creation of twitter accounts that **impersonated a seemingly real individual** rather than accounts named in a news-related fashion. A notable example is the author JENN_ABRAMS, a Troll account which was depicted to be a woman in her 30's that supported Trump. This account managed to attain a maximum follower count of 61759 during the period under inspection.
 
-- These observations together show that a number of tactics were implemented by the Trolls, some of which were initiated without knowing what exactly would happen. In the next section, we will attempt to quantify the success of the Trolls, and later try to understand better how they targetted different states.
+- These observations together show that a number of tactics were implemented by the Trolls, some of which were initiated without knowing what exactly would happen. In the following sections, we will attempt to quantify the success of the Trolls, and later try to understand better how they targetted different states.
 
 ## Timeline Insights and Quantifying Success
 
@@ -92,7 +92,7 @@ To better understand what topics were being 'liked', the model for topic predict
 
 ## Targetting Specific States
 
-- There is a particular interest in the swing states, as they include the population of voters that are not necessarily sure for which candidate to vote. The forecast of which states will be swing states in a given year is based on historical trends. For this reason they are considered by many the most relevant states to pursue during presidential campaigns. The definite and potential swing states of the 2016 U.S. election were forecasted to be:
+- There is a particular interest in the [swing states](https://constitutioncenter.org/blog/what-are-the-really-swing-states-in-the-2016-election/), as they include the population of voters that are not necessarily sure for which candidate to vote. The forecast of which states will be swing states in a given year is based on historical trends. For this reason they are considered by many the most relevant states to pursue during presidential campaigns. The definite and potential swing states of the 2016 U.S. election were forecasted to be:
   - Colorado
   - Florida
   - Iowa
@@ -109,7 +109,7 @@ To better understand what topics were being 'liked', the model for topic predict
   - Oregon
   - Wisconsin
   
-- In order to gain a better understanding of how the swing states may have been targetted, the tweets mentioning any of the swing states including the names of cities within them were filtered and counted over time. This was then compared to the trends of all non-swing states. The average value for the tweets per day for swing states is 90, while that of non-swing states is 57. A Wilcoxon test was performed due to the non-normal distribution of the data and results in a p-value of 6.15^-41. Note that the line plots are normalized by number of states that make up the data of a given line - e.g., the sum of tweets for the swing states in a given day are divided by 15 since there are 15 swing states. 
+- In order to gain a better understanding of how the swing states may have been targetted, the tweets mentioning any of the swing states including the names of cities within them were filtered and counted over time. This was then compared to the trends of all non-swing states. The average value for the tweets per day for swing states is 90, while that of non-swing states is 57. A Wilcoxon test was performed due to the non-normal distribution of the data and results in a p-value of 6.15x10^-41. Note that the line plots are normalized by number of states that make up the data of a given line - e.g., the sum of tweets for the swing states in a given day are divided by 15 since there are 15 swing states. 
 
 {% include swingstate1.html %}
 
