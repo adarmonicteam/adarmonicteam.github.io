@@ -14,6 +14,21 @@ An analysis of the types of languages that were tweeted reveals that **Russian**
 
 {% include languages.html %}
 
+### Account Categories
+
+Following the work of [Linvill and Warren](http://pwarren.people.clemson.edu/Linvill_Warren_TrollFactory.pdf), the Russian Trolls can be clustered into few different account categories: 
+
+- Right Troll: nativist and right-leaning populist messages, conservatives ( #tcot #ccot)  and Trump related, uniformly supporting Trump after his nomination as the republican candidate.
+- Left Troll: socially liberal messages, cultural identity, gender and sexual identity (#LGBTQ), religious identity (#MuslimBan) and racial identity (#blacklivesmatter). 
+As stated by the authors these tweets aimed to be divisive and against Hillary Clinton.
+- NewsFeed: particularly directed to local news posting, these trolls aimed at a specific U.S. citizens and mixed with the real local news services. They are characterized by names such as @OnlineMemphis and @TodayPittsburgh.
+- Hashtag Gamer, Fearmonger, Commercial and NonEnglish are others categories that have not been analyzed because of the few amount of data available and less relevance to our project question.
+
+The plot below shows the distribution of each account followers per different category, notably we can see that many authors (especially left and right trolls) did not manage to reach a high number of users. 
+We must consider the fact that the trolls could follow each other to give credibility to their accounts, therefore, knowing that the total number of unique trolls appearing in the dataset is 1.048, we can infer that those accounts with more that 1000 followers might be followed by also real American citizens. To further sustain this hypothesis we clearly see a higher density of accounts which have around 100 and 1000 followers, suggesting the fact that this distribution might not come from ‘natural accounts’ but from an organized entity.
+
+{% include categoriesDistr.html %}
+
 ### Modelling Topics
 
 This following section will describe the models that were created for further analysis.
