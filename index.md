@@ -44,14 +44,23 @@ In order to gain a better understanding of what the Trolls were posting about, a
 
 The Trolls were able to gain the attention of the masses via various strategies.
 
-- One strategy was through exploiting popular and controversial events that occured either in America or internationally. As can be seen in the line plot below which ranges up to one year before the presidential election, there are distinct spikes that we can show to be correlated to events by reading specific tweets in the specific time periods. Examples include the following:
+- One strategy was through exploiting popular and controversial events that occured either in America or internationally. As can be seen in the line plot below which ranges up to one year before the presidential election, there are distinct spikes that we can show to be correlated to events by reading specific tweets in the specific time periods. Examples include the following for the most followed accounts:
 
 1. On **November 11th 2015**, there is a spike in the topic Foreign Countries. From inspection of the tweets, this is most likely attributable to the coordinated terrorist attacks that took place in Paris.
-  > You may not be at war with Islam, but Islam is at war with you   #ISIS - JENN_ABRAMS
-  > The US prison population's about 25% of the world's prisoners, while the US holds only 5% of the world's population - JENN_ABRAMS
+  > You may not be at war with Islam, but Islam is at war with you   #ISIS 
+    - JENN_ABRAMS
+
 2. During the week of **February 29th 2016**, there is a peak in the topic related to African-Americans. The Oscars ceremony of 2016 was supposedly a very controversial ceremony, due to the fact that there were no black actors that were nominated. The Russian Trolls took advantage of this event to gain potential followers.
+  > #OscarsSoWhite REALLY?? #Oscars
+    - JENN_ABRAMS
+    
 3. On **March 19th 2016**, there is a sharp increase in the topic Islam. This is the date of the bombing in Brussels, which is believed to have been related to ISIS. Tweets related to this event show strong anti-immigration sentiments.
+  > No equality. No freedom. Just violence, civil war and terrorism... Do we need this to happen in America?
+    - PIGEONTODAY
+    
 4. On **September 26th**, the Trump Adversary topic sees its greatest spike. This was cooincidently the date of the first presidential debate between Donald Trump and Hillary Clinton.
+  > This is not a misspell on Hofstra University's debate tickets It's the name of Hillary's body double #debatenight
+    -JENN_ABRAMS
 
 {% include topics1.html %}
 
