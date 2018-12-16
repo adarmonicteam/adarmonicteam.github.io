@@ -93,14 +93,15 @@ We wanted to investigate who do the users mention in particular if they mention 
 ## Do trolls re-write the same tweet?
 We were interested to see if tweet contents are repeated several times. In order to do that we filtered the data to only contain tweets that were not labeled as a retweet and found that there are 16,707 tweets that appear more than once, 170 tweets that appear more than 10 times and 8 tweets that appear more than 30 times which are the tweets we focus on.  
 As the tweets are too long to show on any figure we created the following mapping:
-	Tweet 1: “NewsOne Now Audio Podcast: Bishop E.W. Jackson Calls #BlackLivesMatter Is Movement “Disgraceful””
-	Tweet 2: “Honor scores  #sports”
-	Tweet 3: “SE Wis. road construction projects  #Wisconsin”
-	Tweet 4: “Celebrity style: Red carpet looks  #celebs #news”
-	Tweet 5: “Daily Celebrity Watch  #celebs #news”
-	Tweet 6: “RT @thehill: Trump repeatedly interrupted by protesters shouting #BlackLivesMatter”
-	Tweet 7: “On the Air  #sports”
-	Tweet 8: “Judge Rips Media”
+
+	- Tweet 1: “NewsOne Now Audio Podcast: Bishop E.W. Jackson Calls #BlackLivesMatter Is Movement “Disgraceful””
+	- Tweet 2: “Honor scores  #sports”
+	- Tweet 3: “SE Wis. road construction projects  #Wisconsin”
+	- Tweet 4: “Celebrity style: Red carpet looks  #celebs #news”
+	- Tweet 5: “Daily Celebrity Watch  #celebs #news”
+	- Tweet 6: “RT @thehill: Trump repeatedly interrupted by protesters shouting #BlackLivesMatter”
+	- Tweet 7: “On the Air  #sports”
+	- Tweet 8: “Judge Rips Media”
 
 As one can see these tweets target the BlackLivesMatter movement or news (sports and entertainment). We quantified how many times each one of these tweets appeared in the data with Tweet 1 appearing more than 200 times and Tweets 2 and 3 are above 100 and almost 100 times respectively. 
 
