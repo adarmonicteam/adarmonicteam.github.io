@@ -14,7 +14,7 @@ An analysis of the types of languages that were tweeted reveals that Russian and
 
 ### Modelling Topics
 
-In order to gain a better understanding of what the Trolls were posting about, a neural network was trained to recognize 11 topics that we deemed to be the most dominant based on the most common hashtags. This is hence a supervised learning approach. These topics include the following:
+In order to gain a better understanding of what the Trolls were posting about, a neural network was trained to recognize 11 topics that we deemed to be the most dominant based on the most common hashtags. This is hence a supervised learning approach. These topics include the following (hover with the mouse on each topic description to show the cloud of the most tweeted words in that topic):
 
 
 
