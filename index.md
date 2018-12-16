@@ -28,7 +28,8 @@ In order to gain a better understanding of what the Trolls were posting about, a
 
 {% include CrimeHover.html %}
 
-- **Sports**. Includes any sports-related activity including events related to games, players and coaches 
+{% include SportHover.html %}
+
 - **Entertainment**. Include events related to celebrities, music and sometimes controversial topics
 - **Health**. Includes tweets related health in general such as health insurance, going to the gym and food
 - **Islam**. Involves anything against Islam, notably ISIS and bombings that occured internationally
