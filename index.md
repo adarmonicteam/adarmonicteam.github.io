@@ -156,15 +156,14 @@ As the tweets are too long to show on any figure we created the following mappin
 - **Tweet 26**: *RT @mitchellvii: #BlackLivesMatter is like a 24/7 advertisement for what a HORRIBLE DIVIDER Obama has been. Thanks guys, that much stupid*
 - **Tweet 27**: *RT @JaredWyand: Ive had death threats by HUNDREDS of #BlackLivesMatter activists this year  Ive killed 0 people  #IslamIsTheProblem*
 
-By extracting tweets which appear at least 5 times (869 tweets) and by applying the topic categorization model to classify political (Trump-related, Trump adversaries, patriot, Black-related, Islam and foreign countries) versus non-political (sports, entertainment, health, crime) tweets we were able to increase the number of samples in the following scatter plot. 
-We noticed that non-political tweets generally have few authors. A scatter plot of the number of distinct authors as a function of number of distinct dates for each tweet was generated. The scatter plot indicates that there is a difference between political tweets and non-political tweets. 
+A scatter plot visualizing the number of distinct authors as a function of number of distinct dates for each tweet was generated.
+By extracting tweets which appear at least 5 times (869 tweets) and by applying the topic categorization model to classify political (Trump-related, Trump adversaries, patriot, Black-related, Islam and foreign countries) versus non-political (sports, entertainment, health, crime) tweets we were able to increase the number of samples in the scatter plot.
 
 ![image5](https://adarmonicteam.github.io//assets//images//scatter2.png)
 
-We do see the same behavior from the political tweets, with some change in behavior for the non-political tweets. We decided to test statistical significance using the Wilcoxon signed-rank test (as we do not assume Gaussian distribution) on the number of distinct authors, as we feel that it is a better indicator for the difference between the two behaviors). The test resulted with a p-value of 1.50e-09 showing statistical significane and that the political tweets and non-political tweets exhibit different behavior. We do not know if the change in behavior of the non-political tweets is due to misclassification of our classifier or due to the behavior of the trolls.
+The scatter plot indicates that there is a difference between political tweets and non-political tweets with respect to the amount of distinct authors. A statistical test for significance using the Wilcoxon signed-rank test on the difference between the two classes based on number of distinct authors resulted in a p-value of **1.50e-09**.
 
-Our hypothesis is that the reasons they are always multiple authors for political tweets is that the trolls had a database of tweets to use. As all political tweets have less than 20 distinct dates we believe they are coordinated to some extent.
-
+A potential hypothesis for the fact that politically-related tweets tend to have multiple authors is that the trolls may have been instructed to release a given tweet. As all political tweets have less than 20 distinct dates we believe they are coordinated to some extent.
 
 ### Targetting Specific States
 
