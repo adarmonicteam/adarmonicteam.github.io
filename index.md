@@ -29,8 +29,7 @@ The plot below shows the distribution of followers for each account category. No
 
 ### Modelling Topics
 
-This section will describe the models that were created for further analysis.
-In order to gain a better understanding of what the Trolls were posting about, a **neural network** was trained to recognize 11 topics that we deemed to be the most dominant based on the most common hashtags. This is hence a supervised learning approach. The neural net was implemented in PyTorch and trained using Google CoLab's Tesla K80 GPU. The net has three hidden layers - the first, second and third layers have 6000, 1000 and 100 neurons, respectively. The model was shown to have an accuracy of 85% through an evaluation on a test set. The list of topics is given below. **Try hovering over the topic description** for a graphical representation of the most tweeted words in a given topic.
+In order to gain a better understanding of what the Trolls were posting about, a **neural network** was trained to recognize 10 topics that we deemed to be the most dominant based on the most common hashtags. This is hence a supervised learning approach. The neural net was implemented in PyTorch and trained using Google CoLab's Tesla K80 GPU. The net has three hidden layers - the first, second and third layers have 6000, 1000 and 100 neurons, respectively. The model was shown to have an accuracy of 85% through an evaluation on a test set. The list of topics is given below. **Try hovering over the topic description** for a graphical representation of the most tweeted words in a given topic.
 
 
 
@@ -57,11 +56,11 @@ In order to gain a better understanding of what the Trolls were posting about, a
 
 ### Timeline Insights and Quantifying Success
 
-From the following plot, it is clear that the general increase in followers cannot be attributed to an increase in tweets, nor increase in active authors. What could the increase in followers be attributed to? Are they real people? Or perhaps they are the Trolls themselves, including bots that may have been set up? To help answer this question, the statistics on the number of 'likes' were retrieved. 'Likes' have the potential to be considered as an indicator of Troll success - i.e. if they were able to get through to the general public. Here we see that the number of 'likes' skyrockets from 50,000 to 150,000 at the start of September, 2 months before the election. These numbers make sense, as there are approximately 200,000-400,000 followers in total during this period. 
+From the following plot, it is clear that the general increase in followers cannot be attributed to an increase in tweets, nor increase in active authors. What could the increase in followers be attributed to? Are they real people? Or perhaps they are the Trolls themselves, including bots that may have been set up? To help answer this question, the statistics on the number of 'likes' were retrieved. 'Likes' have the potential to be considered as an indicator of Troll success - i.e. if they were able to get through to the general public. Here we see that the number of 'likes' skyrockets from 50,000 to 150,000 at the start of September, 2 months before the election. These numbers make sense, as there is an increase of approximately 200,000-400,000 followers in total during this period. 
 
 {% include generalinfo2.html %}
 
-To better understand what topics were being 'liked', the model for topic prediction was applied. The graph below shows the proportions for the most dominant topics over time. However, we are most interested in the period between September 2016 to the date of the election, since this is when 'like' counts reach their highest numbers. Here it is shown that the majority of 'likes' were attributed to topics related to the election such as Trump-support, Black-support and finally to smashing Trump adversaries (including Clinton and Obama), interestingly the news related tweets did not receive any significant increase in likes. Had these 'likes' been caused by bots, it would have been likely to see an increase in 'likes' that are not catered to a specific topic but rather distributed among all Troll tweets. Since practically no 'likes' were given to News-Feed topics, it may be less likely that the 'likes' are fake, and are rather related to real Americans who turn their interest towards politically-related topics.
+To better understand what topics were being 'liked', the model for topic prediction was applied. The graph below shows the proportions for the most dominant topics over time. However, we are most interested in the period between September 2016 to the date of the election, since this is when 'like' counts reach their highest numbers. Here it is shown that the majority of 'likes' were attributed to topics related to the election such as Trump-related, Black-related and finally to smashing Trump adversaries (including Clinton and Obama), interestingly the news related tweets did not receive any significant increase in likes. **Had these 'likes' been caused by bots, it would have been likely to see an increase in 'likes' that are not catered to a specific topic but rather distributed among all Troll tweets**. Since practically no 'likes' were given to News-Feed topics, it may be less likely that the 'likes' are fake, and are rather related to real Americans who turn their interest towards politically-related topics.
 
 {% include generalinfolikes2.html %}
 
@@ -71,7 +70,7 @@ The Trolls may have been able to gain the attention of the masses via various st
 
 ### Targetting Events and Subpopulations
 
-- One strategy was through **exploiting popular and controversial events** that occured either in America or internationally. As can be seen in the line plot below which ranges up to one year before the presidential election, there are distinct spikes that we can show to be correlated to events by reading specific tweets in the specific time periods. Examples include the following for the most followed accounts:
+- One strategy was through **exploiting popular and controversial events** that occured either in America or internationally. As can be seen in the line plot below, which ranges up to one year before the presidential election, there are distinct spikes that can be shown to be correlated to events by examining the tweets in the specific time periods. Examples include the following for the most followed accounts:
 
 1. On **November 11th 2015**, there is a spike in the topic Foreign Countries. From inspection of the tweets, this is most likely attributable to the coordinated terrorist attacks that took place in Paris.
   > You may not be at war with Islam, but Islam is at war with you   #ISIS 
@@ -85,17 +84,17 @@ The Trolls may have been able to gain the attention of the masses via various st
   > No equality. No freedom. Just violence, civil war and terrorism... Do we need this to happen in America?
     -PIGEONTODAY
     
-4. On **September 26th**, the Trump Adversary topic sees its greatest spike. This was cooincidently the date of the first presidential debate between Donald Trump and Hillary Clinton.
+4. On **September 26th**, the Trump Adversary topic sees its greatest spike. This was coincidently the date of the first presidential debate between Donald Trump and Hillary Clinton.
   > This is not a misspell on Hofstra University's debate tickets It's the name of Hillary's body double #debatenight
     -JENN_ABRAMS
 
 {% include topics1.html %}
 
-- A second strategy includes **targetting specific populations** of people. One of the most prominent that was found was that of the African-American population, which is a politically relevant community. Interestingly, when topic categorization was applied to analyze the types of tweets that were being released, the states which higher percentages of African-Americans correlated with the percent of Black-related tweets that were released by the Trolls.
+- A second strategy includes **targetting specific populations** of people. One of the most prominent that was found was that of the African-American population, which is a politically relevant community. When topic categorization was applied to analyze the types of tweets that were being released, the states with higher percentages of African-Americans, as determined by the [U.S. census of 2010](https://www.census.gov/quickfacts/geo/chart/US/RHI225217), correlated with the percent of Black-related tweets that were released by the Trolls.
 
 {% include blackstates.html %} 
 
-When a correlation coefficient is calculated that quantifies the relationship between the percentage of African-Americans versus the percent of Black-support topics in that state, a value of **0.52** is retrieved. This implies that there is a statistically relevant relationship between these two variables, and that the Trolls may very well have considered the African-American population of states when releasing tweets.
+A pearson correlation coefficient of **0.52** is obtained when quantifying the relationship between the percentage of African-Americans versus the percent of Black-support topics in that state. This implies that there is a statistically relevant relationship between these two variables, and that the Trolls may very well have considered the African-American population of states when releasing tweets. Furthermore, it validates the ability of our topic categorization model to accurately classify the Black-related topic.
 
 {% include BlackCorrelation2.html %}
 
