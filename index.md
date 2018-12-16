@@ -167,14 +167,13 @@ We noticed that no political tweet has more than 1 distinct author! To further i
 
 The scatter plot confirmed our believes that there is a clear difference between political tweets and non-political tweets.
 
-We decided to take the 16,707 tweets that appear more than once and re-do the same analysis automatically using our topic classifier. We classified all the tweets with topics (Crime/Sports/Entertainment/Health) as non-political and all the rest as political. 
+We decided to take the tweets that appear  5 times or more (869 tweets) and re-do the same analysis automatically using our topic classifier. We classified all the tweets with topics (Crime/Sports/Entertainment/Health) as non-political and all the rest as political. 
 
 ![image5](https://adarmonicteam.github.io//assets//images//scatter2.png)
 
-We do see the same behavior from the political tweets. We do not know if the change in behavior of the non-political tweets is due to misclassification of our classifier or due to the behavior of the trolls.
+We do see the same behavior from the political tweets, with some change in behavior for the non-political tweets. We decided to test statistical significance using the Wilcoxon signed-rank test (as we do not assume Gaussian distribution) on the number of distinct authors, as we feel that it is a better indicator for the difference between the two behaviors). The test resulted with a p-value of 1.5047361860066575e-09 showing statistical significane and that the political tweets and non-political tweets exhibit different behavior. We do not know if the change in behavior of the non-political tweets is due to misclassification of our classifier or due to the behavior of the trolls.
 
-Our hypothesis is that the reasons they are always multiple authors for political tweets is that the trolls had a database of tweets to use. As all political tweets have less than 20 distinct dates we believe they are coordinated to some extent. The reasons the non-political tweets have the same behavoir is that perhaps some of them are also in this database.
-
+Our hypothesis is that the reasons they are always multiple authors for political tweets is that the trolls had a database of tweets to use. As all political tweets have less than 20 distinct dates we believe they are coordinated to some extent.
 
 
 ### Targetting Specific States
