@@ -29,7 +29,7 @@ The plot below shows the distribution of followers for each account category. No
 
 ### Modelling Topics
 
-This following section will describe the models that were created for further analysis.
+This section will describe the models that were created for further analysis.
 In order to gain a better understanding of what the Trolls were posting about, a **neural network** was trained to recognize 11 topics that we deemed to be the most dominant based on the most common hashtags. This is hence a supervised learning approach. The neural net was implemented in PyTorch and trained using Google CoLab's Tesla K80 GPU. The net has three hidden layers - the first, second and third layers have 6000, 1000 and 100 neurons, respectively. The model was shown to have an accuracy of 85% through an evaluation on a test set. The list of topics is given below. **Try hovering over the topic description** for a graphical representation of the most tweeted words in a given topic.
 
 
@@ -61,7 +61,7 @@ From the following plot, it is clear that the general increase in followers cann
 
 {% include generalinfo2.html %}
 
-To better understand what topics were being 'liked', the model for topic prediction was applied. Here it is shown that the majority of 'likes' were attributed to topics related to the election such as Trump-support, Black-support and finally to smashing Trump adversaries (including Clinton and Obama), interestingly the news related tweets did not receive any significant increase in likes. Had these 'likes' been caused by bots, it would have been likely to see an increase in 'likes' that are not catered to a specific topic but rather distributed among all Troll tweets. Since practically no 'likes' were given to News-Feed topics, it may be less likely that the 'likes' are fake, and are rather related to real Americans who turn their interest towards politically-related topics.
+To better understand what topics were being 'liked', the model for topic prediction was applied. The graph below shows the proportions for the most dominant topics over time. However, we are most interested in the period between September 2016 to the date of the election, since this is when 'like' counts reach their highest numbers. Here it is shown that the majority of 'likes' were attributed to topics related to the election such as Trump-support, Black-support and finally to smashing Trump adversaries (including Clinton and Obama), interestingly the news related tweets did not receive any significant increase in likes. Had these 'likes' been caused by bots, it would have been likely to see an increase in 'likes' that are not catered to a specific topic but rather distributed among all Troll tweets. Since practically no 'likes' were given to News-Feed topics, it may be less likely that the 'likes' are fake, and are rather related to real Americans who turn their interest towards politically-related topics.
 
 {% include generalinfolikes2.html %}
 
@@ -99,13 +99,9 @@ When a correlation coefficient is calculated that quantifies the relationship be
 
 {% include BlackCorrelation2.html %}
 
-- Another strategy that was attempted was to **reply to popular twitter authors** such as *midnight* that are followed by a significant proportion of the American people. However, given the fact that only individuals who follow both the Troll who replied *and* the author to which the reply was made can see the reply, this tactic may have not been the best in terms of gaining an audience. For this reason the number of replies remains relatively low. (Does it drop off as time goes by?)
-
 - One approach that had racked up a large quantity of followers was the creation of twitter accounts that **impersonated a seemingly real individual** rather than accounts named in a news-related fashion. A notable example is the author JENN_ABRAMS, a Troll account which was depicted to be a woman in her 30's that supported Trump. This account managed to attain a maximum follower count of 61759 during the period under inspection.
 
-### Mentioning Specific Users
-
-To investigate whether the users mention eachother or other users by means of tags (denoted by the '@' symbol), an analysis was conducted by extracting unique users that were mentioned in tweets and quantifying their occurences. It appears that trolls do not tend to mention eachother - only 13 trolls were shown to name another fellow troll. The accounts belonging to these 13 trolls are categorized as HashtagGamer. Additionally, other than the leading 3 trolls, they are mentioned only a few times.
+- Another strategy that was attempted was to **reply to popular twitter authors** such as *midnight* that are followed by a significant proportion of the American people. However, given the fact that only individuals who follow both the Troll who replied *and* the author to which the reply was made can see the reply, this tactic may have not been the best in terms of gaining an audience. For this reason the number of replies remains relatively low. The analysis was conducted by extracting unique users that were mentioned in tweets and quantifying their occurences. It appears that trolls do not tend to mention eachother - only 13 trolls were shown to name another fellow troll. The accounts belonging to these 13 trolls are categorized as HashtagGamer. Additionally, other than the leading 3 trolls, they are mentioned only a few times.
 
 ![image1](https://adarmonicteam.github.io/assets/images/trolls_mentioning_other_trolls.png)
 
@@ -130,37 +126,36 @@ Only in the 10 tweets with the most replies did we see some tweets with a poitic
 
 We were interested to see if tweet contents are repeated several times. In order to do so, the data was filtered to only contain tweets that were not labeled as a retweet. The findings were that there are 16,707 tweets that appear more than once in the entire dataset, while there are 27 tweets that appear more than 15 times. The following analysis focuses on these 27 tweets.
 
-As the tweets are too long to show on any figure we created the following mapping:
-- Tweet 1: *NewsOne Now Audio Podcast: Bishop E.W. Jackson Calls #BlackLivesMatter Is Movement “Disgraceful”*
-- Tweet 2: *Honor scores  #sports*
-- Tweet 3: *SE Wis. road construction projects  #Wisconsin*
-- Tweet 4: *Celebrity style: Red carpet looks  #celebs #news*
-- Tweet 5: *Daily Celebrity Watch  #celebs #news*
-- Tweet 6: *RT @thehill: Trump repeatedly interrupted by protesters shouting #BlackLivesMatter*
-- Tweet 7: *On the Air  #sports*
-- Tweet 8: *Judge Rips Media*
-- Tweet 9: *RT @RNRIllinois: Remember Kids. Dont do CNN. Its a gateway Station that leads to other Liberal media. #RedNationRising #tcot #PJNET*
-- Tweet 10: *Winning numbers drawn in 'Triple Chance' game  #Texas*
-- Tweet 11: *RT @jstines3: It's not CLUMPS of TISSUE that move and smile and react!  #DefundPP #PPSellsBabyParts #TCOT #CCOT #PJNET*
-- Tweet 12: *TV/radio schedules  #sports*
-- Tweet 13: *GUIDE: What's up in Pittsburgh this weekend?  #entertainment*
-- Tweet 14: *#local #news AZ365: Arizona life 2016*
-- Tweet 15: *RT @mitchellvii: Dear #BlackLivesMatter: If you act in life as you acted at the Trump Rally, it ain't the white man who's holding you back*
-- Tweet 16: *Biggest and best upcoming events around Phoenix  #events*
-- Tweet 17: *RT @RNRIllinois: In this figure you can see how Socialism works at the Beach. #RedNationRising #tcot #FeelTheBern #UniteBlue #PJNET
-- Tweet 18: *RT @hannahkauthor: Some media are showing(manipulating and controlling) #Election2016 polls to confuse voters? #TGDN #PJNET #TCOT*
-- Tweet 19: *RT @peddoc63: Closest we have EVER been to Ronald Reagan is @tedcruz*
-- Tweet 20: *#politics How your U.S. lawmakers voted*
-- Tweet 21: *RT @josephjett: #Dependency on govt handouts, #welfare #affirmativeaction equate to #slavery We must say, Never Again! #BlackTwitter*
-- Tweet 22: *RT @tedcruz45: @tedcruz just knocked it out of the park at #CRconvention and won a LOT of votes in #SCPrimary! #TedCruz2016 #CruzCrew #PJNET*
-- Tweet 23: *RT @hannahkauthor: Just because he is the head of the Catholic Church, he is always right? #TGDN #PJNET #MakeAmericaGreatAgain @realDonaldTrump*
-- Tweet 24: *RT @jstines3: Cruz fights DC Cartel EVERY DAY, not just during Campaigns!  #WakeUpAmerica #CruzCrew #TrusTed #TCOT #PJNET*
-- Tweet 25: *RT @angelacarwile: .@cristinalaila1 @TRUCKITRICH Or what about the people harassed by #BlackLivesMatter?⏩@LorettaLynch Not an issue to you?*
-- Tweet 26: *RT @mitchellvii: #BlackLivesMatter is like a 24/7 advertisement for what a HORRIBLE DIVIDER Obama has been. Thanks guys, that much stupid*
-- Tweet 27: *RT @JaredWyand: Ive had death threats by HUNDREDS of #BlackLivesMatter activists this year  Ive killed 0 people  #IslamIsTheProblem*
+We were interested in quantifying the difference between politically-related topics and non-politically related topics with respect to duplicate tweets from distinct authors. We show that politically-related tweets tend to have larger numbers of distinct authors that post them, while non-politically related tweets tend to stick with a single author. The distinct dates that the tweets were released were also kept track of.
 
-We noticed that some of them are political and some are more related to entertainment or sports. We wanted to explore some properties of these tweets and to see if these properties change via the nature of the tweet (political/non-political).
-We quantified the number of repetitions of each tweet in the whole data (excluding retweets), than we quantified how many distinct authors have tweeted each tweet and in how many distinct dates were these tweets tweeted.
+As the tweets are too long to show on any figure we created the following mapping:
+- **Tweet 1**: *NewsOne Now Audio Podcast: Bishop E.W. Jackson Calls #BlackLivesMatter Is Movement “Disgraceful”*
+- **Tweet 2**: *Honor scores  #sports*
+- **Tweet 3**: *SE Wis. road construction projects  #Wisconsin*
+- **Tweet 4**: *Celebrity style: Red carpet looks  #celebs #news*
+- **Tweet 5**: *Daily Celebrity Watch  #celebs #news*
+- **Tweet 6**: *RT @thehill: Trump repeatedly interrupted by protesters shouting #BlackLivesMatter*
+- **Tweet 7**: *On the Air  #sports*
+- **Tweet 8**: *Judge Rips Media*
+- **Tweet 9**: *RT @RNRIllinois: Remember Kids. Dont do CNN. Its a gateway Station that leads to other Liberal media. #RedNationRising #tcot #PJNET*
+- **Tweet 10**: *Winning numbers drawn in 'Triple Chance' game  #Texas*
+- **Tweet 11**: *RT @jstines3: It's not CLUMPS of TISSUE that move and smile and react!  #DefundPP #PPSellsBabyParts #TCOT #CCOT #PJNET*
+- **Tweet 12**: *TV/radio schedules  #sports*
+- **Tweet 13**: *GUIDE: What's up in Pittsburgh this weekend?  #entertainment*
+- **Tweet 14**: *#local #news AZ365: Arizona life 2016*
+- **Tweet 15**: *RT @mitchellvii: Dear #BlackLivesMatter: If you act in life as you acted at the Trump Rally, it ain't the white man who's holding you back*
+- **Tweet 16**: *Biggest and best upcoming events around Phoenix  #events*
+- **Tweet 17**: *RT @RNRIllinois: In this figure you can see how Socialism works at the Beach. #RedNationRising #tcot #FeelTheBern #UniteBlue #PJNET
+- **Tweet 18**: *RT @hannahkauthor: Some media are showing(manipulating and controlling) #Election2016 polls to confuse voters? #TGDN #PJNET #TCOT*
+- **Tweet 19**: *RT @peddoc63: Closest we have EVER been to Ronald Reagan is @tedcruz*
+- **Tweet 20**: *#politics How your U.S. lawmakers voted*
+- **Tweet 21**: *RT @josephjett: #Dependency on govt handouts, #welfare #affirmativeaction equate to #slavery We must say, Never Again! #BlackTwitter*
+- **Tweet 22**: *RT @tedcruz45: @tedcruz just knocked it out of the park at #CRconvention and won a LOT of votes in #SCPrimary! #TedCruz2016 #CruzCrew #PJNET*
+- **Tweet 23**: *RT @hannahkauthor: Just because he is the head of the Catholic Church, he is always right? #TGDN #PJNET #MakeAmericaGreatAgain @realDonaldTrump*
+- **Tweet 24**: *RT @jstines3: Cruz fights DC Cartel EVERY DAY, not just during Campaigns!  #WakeUpAmerica #CruzCrew #TrusTed #TCOT #PJNET*
+- **Tweet 25**: *RT @angelacarwile: .@cristinalaila1 @TRUCKITRICH Or what about the people harassed by #BlackLivesMatter?⏩@LorettaLynch Not an issue to you?*
+- **Tweet 26**: *RT @mitchellvii: #BlackLivesMatter is like a 24/7 advertisement for what a HORRIBLE DIVIDER Obama has been. Thanks guys, that much stupid*
+- **Tweet 27**: *RT @JaredWyand: Ive had death threats by HUNDREDS of #BlackLivesMatter activists this year  Ive killed 0 people  #IslamIsTheProblem*
 
 We can see the results in the bar plot below (political tweets are labeled in red)
 
