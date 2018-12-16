@@ -122,19 +122,26 @@ When a correlation coefficient is calculated that quantifies the relationship be
 {% include authorstate.html %}
 
 - Another analysis of the states over time was performed by classifying the account category as 'Right Troll' or 'Left Troll'. For each month in the dataset we filtered the number of tweets for each account category mentioning specific states or cities within those states. The interactive maps for the Right Trolls and the Left Trolls can be found below. There are two findings of this analysis. One finding is that the **Right Trolls generally did not take advantage of specific events to tweet about, while the Left Trolls did** (albeit to a limited extent). Another finding is that **events that trigger Right Trolls to tweet have the opposite effect on Left Trolls** and vice versa.
-  - Regarding the states, there was one event that caused a particularly massive outbreak of tweets from the Right Trolls. This event occured in December 2015. Inspection of the maps in this period reveals that there were 1460 tweets concerning California released by the Right Trolls and only a single tweet released by the Left Trolls. During this month a mass shooting and an attempted bombing occured in San Bernardino, California resulting in 14 killed and 22 seriously injured. The perpetrators were a married couple of Pakistani descent. It seems logical for the RightTrolls to tweet about this attack and use it to promote right wing agenda. Notably, the single Left Troll tweet was completely unrelated to this event, concerned about the Mosque Fire in Coachella. The RightTroll tweets contained sympathetic tweets such as: 
-  > My heart goes out to the victims who were not so lucky  #Prayers4California"
-  > Guns are our friends because in a country without guns, I'm what's known as "prey." All females are.  #Prayers4California
-  > Under Obama administration mass shootings happen every month! He wants to cover his ass with gun control! 
-    - Examples of an anti-gun law tweet
-  > #SanBernardinoShooting displayes how inept and clueless anti-gun lawmakers are. #Prayers4California
-  > #ObamaLogic: we can’t defeat ISIS? We definitely must ban guns #Prayers4California
+  - Regarding the states, there was one event that caused a particularly massive outbreak of tweets from the Right Trolls. This event occured in December 2015. Inspection of the maps in this period reveals that there were 1460 tweets concerning California released by the Right Trolls and only a single tweet released by the Left Trolls. During this month a mass shooting and an attempted bombing occured in San Bernardino, California resulting in 14 killed and 22 seriously injured. The perpetrators were a married couple of Pakistani descent. It seems logical for the RightTrolls to tweet about this attack and use it to promote right wing agenda. Notably, the single Left Troll tweet was completely unrelated to this event, concerned about the Mosque Fire in Coachella. The RightTroll tweets contained sympathetic tweets such as:  
+    - Examples of anti-gun law tweets
+      > My heart goes out to the victims who were not so lucky  #Prayers4California"
+      > #SanBernardinoShooting displayes how inept and clueless anti-gun lawmakers are. #Prayers4California
+      > Guns are our friends because in a country without guns, I'm what's known as "prey." All females are. #Prayers4California
+      > Under Obama administration mass shootings happen every month! He wants to cover his ass with gun control! #Prayers4California
     - Criticism of the Obama administration
-  #Prayers4California" 
-  > #GunControl but not Muslim control? Jihad a part of Islam when not raping 6 yr old girls  #Prayers4California
+      > #ObamaLogic: we can’t defeat ISIS? We definitely must ban guns #Prayers4California
     - Anti-muslim sentiments
-    
-Except from this perticuliar event the RightTrolls did not target specific states. The LeftTrolls did not use this strategy as much with a maximum of about 200 tweets per state per month. In december 2015 the LeftTrolls targeted Chicago, Illinois with tweets related to social justice such as: "Chicago Police Admit To Killing Innocent 55-Year-Old Woman By Accident https://t.co/u9iZR2dwdW #BlackMatters https://t.co/D6qDwPOP96", "LIVE FEED FROM CHICAGO ANTI-MAYOR PRTOTEST #Chicago #Rahm #BlackLivesMatter #LaquanMcDonald #PoliceBrutality https://t.co/aaqw2noTHX", "No criminal charges will be filed against the Chicago cop who shot Ronald Johnson. Insanity. #BlackLivesMatter https://t.co/L5At3QoCdX" and tweets such as: "Chicago Mayors Speech Triggers Protests #ResignRahm #RahmEmanuelOut", "Chicago Mayor has to go directly to jail!!! #RahmEmanuelOut" that target the establishment targeting Rahm Emmanuele the mayor of Chicago. If we look at February 2016 we see that the LeftTrolls wrote 201 tweets mentioning Mississippi, upon further insepction most of the tweets were retweets or just copies of the same tweet: "NewsOne Now Audio Podcast: Bishop E.W. Jackson Calls #BlackLivesMatter Is Movement “Disgraceful”". Throughout that month this tweet was both written by different authors or by the same author in different dates 167 times without any retweets. This tweet was filtered as mentioning Mississippi due to the city of Jackson which in this specific case was unrelated. In March 2016 the marking of the 1965 Selma to Montgomery (both in Alabama) marches occured resulting in tweets that focused on black people such as: "I proud to be black!!! #SelmaToMontgomery1965", "I'm with Martin Luther king. Support everything he proposed #SelmaToMontgomery1965 https://t.co/9xhlaPA5yo" showing the LeftTrolls targeting specific events. Besides these few months the RightTrolls and LeftTrolls did not always target specific states but werer more focused on events.
+      > #GunControl but not Muslim control? Jihad a part of Islam when not raping 6 yr old girls  #Prayers4California
+
+  - Left Trolls were in a sense less extreme, but more consistent. With a maximum of 200 tweets per state per month, the Left Trolls targetted a variety of states, including Illinois, Mississippi and Alabama. A lot these tweets were related to social justice and the Black Lives Matter movement. Examples include the following:
+    - For the event at Chicago Illinois in December 2015
+      > Chicago Police Admit To Killing Innocent 55-Year-Old Woman By Accident #BlackMatters
+      > LIVE FEED FROM CHICAGO ANTI-MAYOR PRTOTEST #Chicago #Rahm #BlackLivesMatter #LaquanMcDonald #PoliceBrutality 
+    - For the event in Mississippi that took place in February 2016. Notably a lot of these tweets were retweets or simply copies of the same tweet. This suspicious feature is analyzed in a proceeding section.
+      > NewsOne Now Audio Podcast: Bishop E.W. Jackson Calls #BlackLivesMatter Is Movement “Disgraceful”
+    - March 2016 marked the day of the 1965 Selma to Montgomery (cities in Alabama) march which focuses on African-American rights
+      > I proud to be black!!! #SelmaToMontgomery1965
+      > I'm with Martin Luther king. Support everything he proposed #SelmaToMontgomery1965
 
 {% include left_troll_tweet_number.html %}
 
