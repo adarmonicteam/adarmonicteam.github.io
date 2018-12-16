@@ -187,34 +187,33 @@ We wanted to investigate who do the users mention in particular if they mention 
 We were interested to see if tweet contents are repeated several times. In order to do that we filtered the data to only contain tweets that were not labeled as a retweet and found that there are 16,707 tweets that appear more than once, 170 tweets that appear more than 10 times, 27 tweets that appear more than 15 times and 8 tweets that appear more than 20 time. 
 We decided that 27 tweets is a good number to start analyzing from which is why we sorted all tweets that appear more than 15 times  in a descending order
 As the tweets are too long to show on any figure we created the following mapping:
-
-	- Tweet 1: “NewsOne Now Audio Podcast: Bishop E.W. Jackson Calls #BlackLivesMatter Is Movement “Disgraceful””
-	- Tweet 2: “Honor scores  #sports”
-	- Tweet 3: “SE Wis. road construction projects  #Wisconsin”
-	- Tweet 4: “Celebrity style: Red carpet looks  #celebs #news”
-	- Tweet 5: “Daily Celebrity Watch  #celebs #news”
-	- Tweet 6: “RT @thehill: Trump repeatedly interrupted by protesters shouting #BlackLivesMatter”
-	- Tweet 7: “On the Air  #sports”
-	- Tweet 8: “Judge Rips Media”
-	- Tweet 9: “RT @RNRIllinois: Remember Kids. Dont do CNN. Its a gateway Station that leads to other Liberal media. #RedNationRising #tcot #PJNET”
-	- Tweet 10: “Winning numbers drawn in 'Triple Chance' game  #Texas”
-	- Tweet 11: “RT @jstines3: It's not CLUMPS of TISSUE that move and smile and react!  #DefundPP #PPSellsBabyParts #TCOT #CCOT #PJNET”
-	- Tweet 12: “TV/radio schedules  #sports”
-	- Tweet 13: “GUIDE: What's up in Pittsburgh this weekend?  #entertainment”
-	- Tweet 14: “#local #news AZ365: Arizona life 2016”
-	- Tweet 15: “RT @mitchellvii: Dear #BlackLivesMatter: If you act in life as you acted at the Trump Rally, it ain't the white man who's holding you back,…”
-	- Tweet 16: “Biggest and best upcoming events around Phoenix  #events”
-	- Tweet 17: “RT @RNRIllinois: In this figure you can see how Socialism works at the Beach. #RedNationRising #tcot #FeelTheBern #UniteBlue #PJNET”
-	- Tweet 18: “RT @hannahkauthor: Some media are showing(manipulating and controlling) #Election2016 polls to confuse voters? #TGDN #PJNET #TCOT”
-	- Tweet 19: “RT @peddoc63: Closest we have EVER been to Ronald Reagan is @tedcruz”
-	- Tweet 20: “#politics How your U.S. lawmakers voted”
-	- Tweet 21: “RT @josephjett: #Dependency on govt handouts, #welfare #affirmativeaction equate to #slavery We must say, Never Again! #BlackTwitter”
-	- Tweet 22: “RT @tedcruz45: @tedcruz just knocked it out of the park at #CRconvention and won a LOT of votes in #SCPrimary! #TedCruz2016 #CruzCrew #PJNE…”
-	- Tweet 23: “RT @hannahkauthor: Just because he is the head of the Catholic Church, he is always right? #TGDN #PJNET #MakeAmericaGreatAgain @realDonaldT…”
-	- Tweet 24: “RT @jstines3: Cruz fights DC Cartel EVERY DAY, not just during Campaigns!  #WakeUpAmerica #CruzCrew #TrusTed #TCOT #PJNET”
-	- Tweet 25: “RT @angelacarwile: .@cristinalaila1 @TRUCKITRICH Or what about the people harassed by #BlackLivesMatter?⏩@LorettaLynch Not an issue to you?…”
-	- Tweet 26: “RT @mitchellvii: #BlackLivesMatter is like a 24/7 advertisement for what a HORRIBLE DIVIDER Obama has been. Thanks guys, that much stupid”
-	- Tweet 27: “RT @JaredWyand: Ive had death threats by HUNDREDS of #BlackLivesMatter activists this year  Ive killed 0 people  #IslamIsTheProblem”
+- Tweet 1: *NewsOne Now Audio Podcast: Bishop E.W. Jackson Calls #BlackLivesMatter Is Movement “Disgraceful”*
+- Tweet 2: *Honor scores  #sports*
+- Tweet 3: *SE Wis. road construction projects  #Wisconsin*
+- Tweet 4: *Celebrity style: Red carpet looks  #celebs #news*
+- Tweet 5: *Daily Celebrity Watch  #celebs #news*
+- Tweet 6: *RT @thehill: Trump repeatedly interrupted by protesters shouting #BlackLivesMatter*
+- Tweet 7: *On the Air  #sports*
+- Tweet 8: *Judge Rips Media*
+- Tweet 9: *RT @RNRIllinois: Remember Kids. Dont do CNN. Its a gateway Station that leads to other Liberal media. #RedNationRising #tcot #PJNET*
+- Tweet 10: *Winning numbers drawn in 'Triple Chance' game  #Texas*
+- Tweet 11: *RT @jstines3: It's not CLUMPS of TISSUE that move and smile and react!  #DefundPP #PPSellsBabyParts #TCOT #CCOT #PJNET*
+- Tweet 12: *TV/radio schedules  #sports*
+- Tweet 13: *GUIDE: What's up in Pittsburgh this weekend?  #entertainment*
+- Tweet 14: *#local #news AZ365: Arizona life 2016*
+- Tweet 15: *RT @mitchellvii: Dear #BlackLivesMatter: If you act in life as you acted at the Trump Rally, it ain't the white man who's holding you back*
+- Tweet 16: *Biggest and best upcoming events around Phoenix  #events*
+- Tweet 17: *RT @RNRIllinois: In this figure you can see how Socialism works at the Beach. #RedNationRising #tcot #FeelTheBern #UniteBlue #PJNET
+- Tweet 18: *RT @hannahkauthor: Some media are showing(manipulating and controlling) #Election2016 polls to confuse voters? #TGDN #PJNET #TCOT*
+- Tweet 19: *RT @peddoc63: Closest we have EVER been to Ronald Reagan is @tedcruz*
+- Tweet 20: *#politics How your U.S. lawmakers voted*
+- Tweet 21: *RT @josephjett: #Dependency on govt handouts, #welfare #affirmativeaction equate to #slavery We must say, Never Again! #BlackTwitter*
+- Tweet 22: *RT @tedcruz45: @tedcruz just knocked it out of the park at #CRconvention and won a LOT of votes in #SCPrimary! #TedCruz2016 #CruzCrew #PJNET*
+- Tweet 23: *RT @hannahkauthor: Just because he is the head of the Catholic Church, he is always right? #TGDN #PJNET #MakeAmericaGreatAgain @realDonaldTrump*
+- Tweet 24: *RT @jstines3: Cruz fights DC Cartel EVERY DAY, not just during Campaigns!  #WakeUpAmerica #CruzCrew #TrusTed #TCOT #PJNET*
+- Tweet 25: *RT @angelacarwile: .@cristinalaila1 @TRUCKITRICH Or what about the people harassed by #BlackLivesMatter?⏩@LorettaLynch Not an issue to you?*
+- Tweet 26: *RT @mitchellvii: #BlackLivesMatter is like a 24/7 advertisement for what a HORRIBLE DIVIDER Obama has been. Thanks guys, that much stupid*
+- Tweet 27: *RT @JaredWyand: Ive had death threats by HUNDREDS of #BlackLivesMatter activists this year  Ive killed 0 people  #IslamIsTheProblem*
 
 We noticed that some of them are political and some are more related to entertainment or sports. We wanted to explore some properties of these tweets and to see if these properties change via the nature of the tweet (political/non-political).
 We quantified the number of repetitions of each tweet in the whole data (excluding retweets), than we quantified how many distinct authors have tweeted each tweet and in how many distinct dates were these tweets tweeted.
@@ -239,11 +238,8 @@ Our hypothesis is that the reasons they are always multiple authors for politica
 
 
 
-- These observations together show that a number of tactics were implemented by the Trolls, some of which were initiated without knowing what exactly would happen. In the following sections, we will attempt to quantify the success of the Trolls, and later try to understand better how they targetted different states. 
-
-
 # Conclusion
 
-This analysis of the Twitter dataset provides insights into many potential strategies that may have been employed by the Russian trolls during the 2016 U.S. presidential election. We show that strategies such as gaining credibility via increasing the number of followers artificially, exploiting particular events to attain viewers, targeting African-American population, releasing larger quantities of tweets to swing-states. Furthermore, our research demonstrates that the trolls may have been dedicated to some tactics more than others. 
+This analysis of the Twitter dataset provides insights into many potential strategies that may have been employed by the Russian trolls during the 2016 U.S. presidential election. We show that strategies such as gaining credibility via increasing the number of followers artificially, exploiting particular events to attain viewers, targeting the African-American population, releasing larger quantities of tweets to swing-states and replying to Twitter accounts. Furthermore, our research demonstrates that the trolls may have been dedicated to some tactics more than others. 
 
 We argue that the most reasonable measure of success in terms of reaching out to the American public was by quantifying ‘likes’, which lead to the conclusion that right-wing topics such as pro-Trump and Black-support tended to better obtain the attention of the public.
