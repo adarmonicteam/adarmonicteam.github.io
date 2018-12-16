@@ -16,16 +16,14 @@ An analysis of the types of languages that were tweeted reveals that **Russian**
 
 ### Account Categories
 
-Following the work of [Linvill and Warren](http://pwarren.people.clemson.edu/Linvill_Warren_TrollFactory.pdf), the Russian Trolls can be clustered into few different account categories: 
+Following the work of [Linvill and Warren](http://pwarren.people.clemson.edu/Linvill_Warren_TrollFactory.pdf), the Russian Trolls can be clustered into a few different account categories: 
 
-- Right Troll: nativist and right-leaning populist messages, conservatives ( #tcot #ccot)  and Trump related, uniformly supporting Trump after his nomination as the republican candidate.
-- Left Troll: socially liberal messages, cultural identity, gender and sexual identity (#LGBTQ), religious identity (#MuslimBan) and racial identity (#blacklivesmatter). 
-As stated by the authors these tweets aimed to be divisive and against Hillary Clinton.
-- NewsFeed: particularly directed to local news posting, these trolls aimed at a specific U.S. citizens and mixed with the real local news services. They are characterized by names such as @OnlineMemphis and @TodayPittsburgh.
-- Hashtag Gamer, Fearmonger, Commercial and NonEnglish are others categories that have not been analyzed because of the few amount of data available and less relevance to our project question.
+- **Right Troll**: nativist and right-leaning populist messages, conservatives ( #tcot #ccot)  and Trump related, uniformly supporting Trump after his nomination as the republican candidate.
+- **Left Troll**: socially liberal messages, cultural identity, gender and sexual identity (#LGBTQ), religious identity (#MuslimBan) and racial identity (#blacklivesmatter). As stated by the authors these tweets aimed to be divisive and against Hillary Clinton.
+- **NewsFeed**: mainly directed towards local news posting, these trolls targetted specific U.S. citizens and incorporated real local news services. They are characterized by names such as @OnlineMemphis and @TodayPittsburgh.
+- **HashtagGamer**, **Fearmonger**, **Commercial** and **NonEnglish** are others categories that have not been analyzed because of the relatively small amount of data available as well as the fact that they are less relevant to our research question.
 
-The plot below shows the distribution of each account followers per different category, notably we can see that many authors (especially left and right trolls) did not manage to reach a high number of users. 
-We must consider the fact that the trolls could follow each other to give credibility to their accounts, therefore, knowing that the total number of unique trolls appearing in the dataset is 1.048, we can infer that those accounts with more that 1000 followers might be followed by also real American citizens. To further sustain this hypothesis we clearly see a higher density of accounts which have around 100 and 1000 followers, suggesting the fact that this distribution might not come from ‘natural accounts’ but from an organized entity.
+The plot below shows the distribution of followers for each account category. Notably we can see that many authors (especially left and right trolls) did not manage to reach a high number of followers with respect to the NewsFeed category. Additionally, we must consider the fact that the trolls could follow each other to give credibility to their accounts, therefore, knowing that the total number of unique trolls appearing in the *entire* FiveThirtyEight dataset is 2848, we can be sure that those accounts with more that 2848 followers may be followed by also true American citizens. To further support this hypothesis, higher densities of accounts both at 1000 and 100 followers are visualized on the boxplot, suggesting that this bimodal distribution might not be due to true American Twitter accounts, but from an organized entity.
 
 {% include categoriesDistr.html %}
 
@@ -146,13 +144,19 @@ We wanted to investigate who do the users mention in particular if they mention 
   - Regarding the states, there was one event that caused a particularly massive outbreak of tweets from the Right Trolls. This event occured in December 2015. Inspection of the maps in this period reveals that there were 1460 tweets concerning California released by the Right Trolls and only a single tweet released by the Left Trolls. During this month a mass shooting and an attempted bombing occured in San Bernardino, California resulting in 14 killed and 22 seriously injured. The perpetrators were a married couple of Pakistani descent. It seems logical for the RightTrolls to tweet about this attack and use it to promote right wing agenda. Notably, the single Left Troll tweet was completely unrelated to this event, concerned about the Mosque Fire in Coachella. The RightTroll tweets contained sympathetic tweets such as:  
     - Examples of anti-gun law tweets
       > My heart goes out to the victims who were not so lucky  #Prayers4California"
+      
       as well as:
+      
       > #SanBernardinoShooting displayes how inept and clueless anti-gun lawmakers are. #Prayers4California
+      
       and:
+      
       > Guns are our friends because in a country without guns, I'm what's known as "prey." All females are. #Prayers4California
     - Criticism of the Obama administration
       > Under Obama administration mass shootings happen every month! He wants to cover his ass with gun control! #Prayers4California
+      
       and:
+      
       > #ObamaLogic: we can’t defeat ISIS? We definitely must ban guns #Prayers4California
     - Anti-muslim sentiments
       > #GunControl but not Muslim control? Jihad a part of Islam when not raping 6 yr old girls  #Prayers4California
@@ -160,13 +164,17 @@ We wanted to investigate who do the users mention in particular if they mention 
   - Left Trolls were in a sense less extreme, but more consistent. With a maximum of 200 tweets per state per month, the Left Trolls targetted a variety of states, including Illinois, Mississippi and Alabama. A lot these tweets were related to social justice and the Black Lives Matter movement. Examples include the following:
     - For the event at Chicago Illinois in December 2015
       > Chicago Police Admit To Killing Innocent 55-Year-Old Woman By Accident #BlackMatters
+      
       and:
+      
       > LIVE FEED FROM CHICAGO ANTI-MAYOR PRTOTEST #Chicago #Rahm #BlackLivesMatter #LaquanMcDonald #PoliceBrutality 
     - For the event in Mississippi that took place in February 2016. Notably a lot of these tweets were retweets or simply copies of the same tweet. This suspicious feature is analyzed in a proceeding section.
       > NewsOne Now Audio Podcast: Bishop E.W. Jackson Calls #BlackLivesMatter Is Movement “Disgraceful”
     - March 2016 marked the day of the 1965 Selma to Montgomery (cities in Alabama) march which focuses on African-American rights
       > I proud to be black!!! #SelmaToMontgomery1965
+      
       and:
+      
       > I'm with Martin Luther king. Support everything he proposed #SelmaToMontgomery1965
 
 {% include left_troll_tweet_number.html %}
