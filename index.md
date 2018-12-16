@@ -2,7 +2,7 @@
 
 It is currently under investigation whether during the 2016 U.S. elections a Russian 'troll factory', the **Internet Research agency (IRA)** based in St. Petersburg, released a number of tweets from fraudulent Twitter accounts. These tweets potentially influenced the population of voters by spreading statements, some of which were fake. The aim of this analysis is to better understand the strategy of the trolls by retrieving the main subjects of these tweets over time and categorizing them according to their targeted social, geographical, or political group. Quantifing the potential impact of those tweets and providing a link to specific events that were occuring in the United States at the time are the objectives.
 
-## Introduction
+# Introduction
 
 On October 7th 2016, the **Department of  Homeland Security** and the **Director of National Intelligence** (ODNI) stated that the American Intelligence Community was certain that the Russian Government had interfered with the U.S. election process through a number of strategies with the intent of damaging Hillary Clinton's presidential campaign. Examples of such strategies include, but are not limited to, directed hacking of Hillary Clinton's personal google email account and the broadcasting of fake news via social media accounts. In early 2017, the ODNI stated that the Russian president Vladimir Putin personally ordered this 'influence campaign' to harm Clinton's chances and thereby increase the chance of the election of a president more favorable to Russia. 
 
@@ -41,9 +41,22 @@ In order to gain a better understanding of what the Trolls were posting about, a
 
 {% include ForHover.html %}
 
-## Gaining Viewers
 
-The Trolls were able to gain the attention of the masses via various strategies.
+### Timeline Insights and Quantifying Success
+
+From the following plot, it is clear that the general increase in followers cannot be attributed to an increase in tweets, nor increase in active authors. What could the increase in followers be attributed to? Are they real people? Or perhaps they are the Trolls themselves, including bots that may have been set up? To help answer this question, the statistics on the number of 'likes' were retrieved. 'Likes' have the potential to be considered as an indicator of Troll success - i.e. if they were able to get through to the general public. Here we see that the number of 'likes' skyrockets from 50,000 to 150,000 at the start of September, 2 months before the election. These numbers make sense, as there are approximately 200,000-400,000 followers in total during this period. 
+
+{% include generalinfo2.html %}
+
+To better understand what topics were being 'liked', the model for topic prediction was applied. Here it is shown that the majority of 'likes' were attributed to topics related to the election such as Trump-support, Black-support and finally to smashing Trump adversaries (including Clinton and Obama), interestingly the news related tweets did not receive any significant increase in likes. Had these 'likes' been caused by bots, it would have been likely to see an increase in 'likes' that are not catered to a specific topic but rather distributed among all Troll tweets. Since practically no 'likes' were given to News-Feed topics, it may be less likely that the 'likes' are fake, and are rather related to real Americans who turn their interest towards politically-related topics.
+
+{% include generalinfolikes2.html %}
+
+# Potential Strategies for Gaining Influence
+
+The Trolls may have been able to gain the attention of the masses via various strategies.
+
+### Targetting Events and Subpopulations
 
 - One strategy was through **exploiting popular and controversial events** that occured either in America or internationally. As can be seen in the line plot below which ranges up to one year before the presidential election, there are distinct spikes that we can show to be correlated to events by reading specific tweets in the specific time periods. Examples include the following for the most followed accounts:
 
@@ -79,17 +92,8 @@ When a correlation coefficient is calculated that quantifies the relationship be
 
 - These observations together show that a number of tactics were implemented by the Trolls, some of which were initiated without knowing what exactly would happen. In the following sections, we will attempt to quantify the success of the Trolls, and later try to understand better how they targetted different states.
 
-## Timeline Insights and Quantifying Success
 
-From the following plot, it is clear that the general increase in followers cannot be attributed to an increase in tweets, nor increase in active authors. What could the increase in followers be attributed to? Are they real people? Or perhaps they are the Trolls themselves, including bots that may have been set up? To help answer this question, the statistics on the number of 'likes' were retrieved. 'Likes' have the potential to be considered as an indicator of Troll success - i.e. if they were able to get through to the general public. Here we see that the number of 'likes' skyrockets from 50,000 to 150,000 at the start of September, 2 months before the election. These numbers make sense, as there are approximately 200,000-400,000 followers in total during this period. 
-
-{% include generalinfo2.html %}
-
-To better understand what topics were being 'liked', the model for topic prediction was applied. Here it is shown that the majority of 'likes' were attributed to topics related to the election such as Trump-support, Black-support and finally to smashing Trump adversaries (including Clinton and Obama), interestingly the news related tweets did not receive any significant increase in likes. Had these 'likes' been caused by bots, it would have been likely to see an increase in 'likes' that are not catered to a specific topic but rather distributed among all Troll tweets. Since practically no 'likes' were given to News-Feed topics, it may be less likely that the 'likes' are fake, and are rather related to real Americans who turn their interest towards politically-related topics.
-
-{% include generalinfolikes2.html %}
-
-## Targetting Specific States
+### Targetting Specific States
 
 - There is a particular interest in the [swing states](https://constitutioncenter.org/blog/what-are-the-really-swing-states-in-the-2016-election/), as they include the population of voters that are not necessarily sure for which candidate to vote. The forecast of which states will be swing states in a given year is based on historical trends. For this reason they are considered by many the most relevant states to pursue during presidential campaigns. The definite and potential swing states of the 2016 U.S. election were forecasted to be:
   - Colorado
@@ -117,17 +121,26 @@ To better understand what topics were being 'liked', the model for topic predict
 
 {% include authorstate.html %}
 
-- To better understand how do the trolls operate we wanted to see if they target specific states in the context of the tweet content itself. For each month in the dataset we filtered the number of tweets for each account category mentioning specific states or cities within those states. 
-
-Below are the maps for the Right Trolls and the Left Trolls.
+- Another analysis of the states over time was performed by classifying the account category as 'Right Troll' or 'Left Troll'. For each month in the dataset we filtered the number of tweets for each account category mentioning specific states or cities within those states. The interactive maps for the Right Trolls and the Left Trolls can be found below. There are two findings of this analysis. One finding is that the **Right Trolls generally did not take advantage of specific events to tweet about, while the Left Trolls did** (albeit to a limited extent). Another finding is that **events that trigger Right Trolls to tweet have the opposite effect on Left Trolls** and vice versa.
+  - Regarding the states, there was one event that caused a particularly massive outbreak of tweets from the Right Trolls. This event occured in December 2015. Inspection of the maps in this period reveals that there were 1460 tweets concerning California released by the Right Trolls and only a single tweet released by the Left Trolls. During this month a mass shooting and an attempted bombing occured in San Bernardino, California resulting in 14 killed and 22 seriously injured. The perpetrators were a married couple of Pakistani descent. It seems logical for the RightTrolls to tweet about this attack and use it to promote right wing agenda. Notably, the single Left Troll tweet was completely unrelated to this event, concerned about the Mosque Fire in Coachella. The RightTroll tweets contained sympathetic tweets such as: 
+  > My heart goes out to the victims who were not so lucky  #Prayers4California"
+  > Guns are our friends because in a country without guns, I'm what's known as "prey." All females are.  #Prayers4California
+  > Under Obama administration mass shootings happen every month! He wants to cover his ass with gun control! 
+    - Examples of an anti-gun law tweet
+  > #SanBernardinoShooting displayes how inept and clueless anti-gun lawmakers are. #Prayers4California
+  > #ObamaLogic: we can’t defeat ISIS? We definitely must ban guns #Prayers4California
+    - Criticism of the Obama administration
+  #Prayers4California" 
+  > #GunControl but not Muslim control? Jihad a part of Islam when not raping 6 yr old girls  #Prayers4California
+    - Anti-muslim sentiments
+    
+Except from this perticuliar event the RightTrolls did not target specific states. The LeftTrolls did not use this strategy as much with a maximum of about 200 tweets per state per month. In december 2015 the LeftTrolls targeted Chicago, Illinois with tweets related to social justice such as: "Chicago Police Admit To Killing Innocent 55-Year-Old Woman By Accident https://t.co/u9iZR2dwdW #BlackMatters https://t.co/D6qDwPOP96", "LIVE FEED FROM CHICAGO ANTI-MAYOR PRTOTEST #Chicago #Rahm #BlackLivesMatter #LaquanMcDonald #PoliceBrutality https://t.co/aaqw2noTHX", "No criminal charges will be filed against the Chicago cop who shot Ronald Johnson. Insanity. #BlackLivesMatter https://t.co/L5At3QoCdX" and tweets such as: "Chicago Mayors Speech Triggers Protests #ResignRahm #RahmEmanuelOut", "Chicago Mayor has to go directly to jail!!! #RahmEmanuelOut" that target the establishment targeting Rahm Emmanuele the mayor of Chicago. If we look at February 2016 we see that the LeftTrolls wrote 201 tweets mentioning Mississippi, upon further insepction most of the tweets were retweets or just copies of the same tweet: "NewsOne Now Audio Podcast: Bishop E.W. Jackson Calls #BlackLivesMatter Is Movement “Disgraceful”". Throughout that month this tweet was both written by different authors or by the same author in different dates 167 times without any retweets. This tweet was filtered as mentioning Mississippi due to the city of Jackson which in this specific case was unrelated. In March 2016 the marking of the 1965 Selma to Montgomery (both in Alabama) marches occured resulting in tweets that focused on black people such as: "I proud to be black!!! #SelmaToMontgomery1965", "I'm with Martin Luther king. Support everything he proposed #SelmaToMontgomery1965 https://t.co/9xhlaPA5yo" showing the LeftTrolls targeting specific events. Besides these few months the RightTrolls and LeftTrolls did not always target specific states but werer more focused on events.
 
 {% include left_troll_tweet_number.html %}
 
 {% include right_troll_tweet_number.html %}
 
-When we inspect the maps we see that in December 2015 there were 1460 tweets mentioning California for the right trolls yet for the same month the left trolls only had 1 tweet mentioning. In December 2015 a mass shooting and an attempted bombing occured in San Bernardino, California resulting in 14 killed and 22 seriously injured. The perpetrators were a married couple with the husband being U.S. born from Pakistani descent and the wife was born in Pakistan. It seems logical for the RightTrolls to tweet about this attack and use it to promote right wing agenda. The RightTroll tweets contained sympathetic tweets such as: "My heart goes out to the victims who were not so lucky  #Prayers4California", pro gun tweets such as: "Guns are our friends because in a country without guns, I'm what's known as "prey." All females are.  #Prayers4California" and "#SanBernardinoShooting displayes how inept and clueless anti-gun lawmakers are. #Prayers4California", criticism of the administration such as: "#ObamaLogic: we can’t defeat ISIS? We definitely must ban guns #Prayers4California" and "Under Obama administration mass shootings happen every month! He wants to cover his ass with gun control! #Prayers4California" and anti muslim tweets such as: "#GunControl but not Muslim control? Jihad a part of Islam when not raping 6 yr old girls  #Prayers4California". While the only LeftTroll tweets was unrelated to the event ("Deliberate act and home terror? Mosque Fire in Coachella, California, Investigated by FBI https://t.co/LSnUmD43Ia"). Except from this perticuliar event the RightTrolls did not target specific states. The LeftTrolls did not use this strategy as much with a maximum of about 200 tweets per state per month. In december 2015 the LeftTrolls targeted Chicago, Illinois with tweets related to social justice such as: "Chicago Police Admit To Killing Innocent 55-Year-Old Woman By Accident https://t.co/u9iZR2dwdW #BlackMatters https://t.co/D6qDwPOP96", "LIVE FEED FROM CHICAGO ANTI-MAYOR PRTOTEST #Chicago #Rahm #BlackLivesMatter #LaquanMcDonald #PoliceBrutality https://t.co/aaqw2noTHX", "No criminal charges will be filed against the Chicago cop who shot Ronald Johnson. Insanity. #BlackLivesMatter https://t.co/L5At3QoCdX" and tweets such as: "Chicago Mayors Speech Triggers Protests #ResignRahm #RahmEmanuelOut", "Chicago Mayor has to go directly to jail!!! #RahmEmanuelOut" that target the establishment targeting Rahm Emmanuele the mayor of Chicago. If we look at February 2016 we see that the LeftTrolls wrote 201 tweets mentioning Mississippi, upon further insepction most of the tweets were retweets or just copies of the same tweet: "NewsOne Now Audio Podcast: Bishop E.W. Jackson Calls #BlackLivesMatter Is Movement “Disgraceful”". Throughout that month this tweet was both written by different authors or by the same author in different dates 167 times without any retweets. This tweet was filtered as mentioning Mississippi due to the city of Jackson which in this specific case was unrelated. In March 2016 the marking of the 1965 Selma to Montgomery (both in Alabama) marches occured resulting in tweets that focused on black people such as: "I proud to be black!!! #SelmaToMontgomery1965", "I'm with Martin Luther king. Support everything he proposed #SelmaToMontgomery1965 https://t.co/9xhlaPA5yo" showing the LeftTrolls targeting specific events. Besides these few months the RightTrolls and LeftTrolls did not always target specific states but werer more focused on events.
-
-## Do the trolls mention specific users?
+### Mentioning Specific Users
 
 We wanted to investigate who do the users mention in particular if they mention each other. We plotted the histogram of the trolls mentioned by other trolls and interestingly enough they only mention 13 trolls. All of these 13 troll’s accounts are categorized as HashtagGamer and except the first 3 they are mentioned only a number of times. For each of these 3 users we analyzed the 10 tweets with most replies, most likes and most retweets. Interestingly enough we did not feel that these tweets had a particular “trolling” message and some of them were the same for all the 3 users, with tweets such as: “#ThingsIWontBelieve this church sign https://t.co/BY7GlfV8X0” , “#IHatePokemonGoBecause There will be more distracted drivers”. Only in the 10 tweets with the most replies did we saw some tweets with a poitical side such as: “Obama is elected the 3rd time #MakeMeMadIn5Words”, “Why? And when will my people learn? Whites can’t be trusted #IStartCryingWhen https://t.co/GgDfyBZ5M7” and “#GrowingUpWithObama watching his ugly daughter in all networks https://t.co/Ip5EjlfDzI“. When we take the tweet about Obama being elected for the 3rd time two of the users tweeted it at the same exact time (to the hour). This fact made us do a further investigation into the subject that we will tackle later. We plotted the histogram of all the users mentioned by the trolls and as one can see the most mentioned user is: @midnight which is a late-night internet themed panel game show, while in red we marked the users we would expect to see mentioned (Donald Trump, Hillary Clinton) and the 3 trolls mentioned by other trolls. What we noticed is that in contrast to our expectation they did not mention that much Hillary Clinton nor Donald Trump (around 200 tweets out of more than a million). 
 
