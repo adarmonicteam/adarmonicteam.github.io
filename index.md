@@ -68,6 +68,27 @@ When a correlation coefficient is calculated that quantifies the relationship be
 
 ## Timeline Insights and Quantifying Success
 
+- There is a particular interest in the swing states, as they include the population of voters that are not necessarily sure for which candidate to vote. The forecast of which states will be swing states in a given year is based on historical trends. For this reason they are considered by many the most relevant states to pursue during presidential campaigns. The definite and potential swing states of the 2016 U.S. election were forecasted to be:
+  - Colorado
+  - Florida
+  - Iowa
+  - Michigan
+  - Minnesota
+  - Nevada
+  - New Hampshire
+  - North Carolina
+  - Ohio
+  - Pennsylvania
+  - Virginia
+  - Arizona
+  - Georgia
+  - Oregon
+  - Wisconsin
+  
+In order to gain a better understanding of how the swing states may have been targetted, the tweets mentioning any of the swing states including the names of cities within them were filtered and counted over time. This was then compared to the trends of all non-swing states. The average value for the tweets per day for swing states is 90, while that of non-swing states is 57. A Wilcoxon test was performed due to the non-normal distribution of the data and results in a p-value of 6.15^-41. Note that the line plots are normalized by number of states that make up the data of a given line - e.g., the sum of tweets for the swing states in a given day are divided by 15 since there are 15 swing states. 
+
+{% swingstate1.html %}
+
 From the following plot, it is clear that the general increase in followers cannot be attributed to an increase in tweets, nor increase in active authors. What could the increase in followers be attributed to? Are they real people? Or perhaps they are the Trolls themselves, including bots that may have been set up? To help answer this question, the statistics on the number of 'likes' were retrieved. 'Likes' have the potential to be considered as an indicator of Troll success - i.e. if they were able to get through to the general public. Here we see that the number of 'likes' skyrockets from 50,000 to 150,000 at the start of September, 2 months before the election. These numbers make sense, as there are approximately 200,000-400,000 followers in total during this period. 
 
 {% include generalinfo.html %}
