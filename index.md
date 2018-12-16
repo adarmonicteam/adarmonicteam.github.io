@@ -10,12 +10,13 @@ The Russian internet trolls targetted a number of social media services such as 
 
 ### Languages
 
-An analysis of the types of languages that were tweeted reveals that **Russian** and **English** are the main languages. Interestingly, Spanish is not in this list even though it is the second most prominent language in the United States. The reason for this remains unclear. Since English is spoken by 72% of individuals in the U.S., our project focuses only on the tweets written in English. The following section will describe the models that were created for further analysis.
+An analysis of the types of languages that were tweeted reveals that **Russian** and **English** are the main languages. Interestingly, Spanish appears to be negligible even though it is the second most prominent language in the United States. The reason for this remains unclear. Considering the fact that English is spoken by 72% of individuals in the U.S. and that Russian tweets would not be able to get through to the American population in general, our project focuses only on the tweets written in English. The following plot shows the most common languages, the legend is ordered by most frequent language to less frequent.
 
 {% include languages.html %}
 
 ### Modelling Topics
 
+This following section will describe the models that were created for further analysis.
 In order to gain a better understanding of what the Trolls were posting about, a **neural network** was trained to recognize 11 topics that we deemed to be the most dominant based on the most common hashtags. This is hence a supervised learning approach. The neural net was implemented in PyTorch and trained using Google CoLab's Tesla K80 GPU. The net has three hidden layers - the first, second and third layers have 6000, 1000 and 100 neurons, respectively. The model was shown to have an accuracy of 85% through an evaluation on a test set. The list of topics is given below. **Try hovering over the topic description** for a graphical representation of the most tweeted words in a given topic.
 
 
