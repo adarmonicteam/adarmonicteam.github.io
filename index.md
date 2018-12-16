@@ -41,8 +41,6 @@ In order to gain a better understanding of what the Trolls were posting about, a
 
 {% include ForHover.html %}
 
-**Fukukshima**. A hashtag that appeared multiple times. It was quite distinct so we decided to give it its own topic
-
 ## Gaining Viewers
 
 The Trolls were able to gain the attention of the masses via various strategies.
