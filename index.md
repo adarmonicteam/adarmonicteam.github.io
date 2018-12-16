@@ -105,7 +105,13 @@ When a correlation coefficient is calculated that quantifies the relationship be
 
 - One approach that had racked up a large quantity of followers was the creation of twitter accounts that **impersonated a seemingly real individual** rather than accounts named in a news-related fashion. A notable example is the author JENN_ABRAMS, a Troll account which was depicted to be a woman in her 30's that supported Trump. This account managed to attain a maximum follower count of 61759 during the period under inspection.
 
-- These observations together show that a number of tactics were implemented by the Trolls, some of which were initiated without knowing what exactly would happen. In the following sections, we will attempt to quantify the success of the Trolls, and later try to understand better how they targetted different states.
+### Mentioning Specific Users
+
+We wanted to investigate who do the users mention in particular if they mention each other. We plotted the histogram of the trolls mentioned by other trolls and interestingly enough they only mention 13 trolls. All of these 13 troll’s accounts are categorized as HashtagGamer and except the first 3 they are mentioned only a number of times. For each of these 3 users we analyzed the 10 tweets with most replies, most likes and most retweets. Interestingly enough we did not feel that these tweets had a particular “trolling” message and some of them were the same for all the 3 users, with tweets such as: “#ThingsIWontBelieve this church sign https://t.co/BY7GlfV8X0” , “#IHatePokemonGoBecause There will be more distracted drivers”. Only in the 10 tweets with the most replies did we saw some tweets with a poitical side such as: “Obama is elected the 3rd time #MakeMeMadIn5Words”, “Why? And when will my people learn? Whites can’t be trusted #IStartCryingWhen https://t.co/GgDfyBZ5M7” and “#GrowingUpWithObama watching his ugly daughter in all networks https://t.co/Ip5EjlfDzI“. When we take the tweet about Obama being elected for the 3rd time two of the users tweeted it at the same exact time (to the hour). This fact made us do a further investigation into the subject that we will tackle later. We plotted the histogram of all the users mentioned by the trolls and as one can see the most mentioned user is: @midnight which is a late-night internet themed panel game show, while in red we marked the users we would expect to see mentioned (Donald Trump, Hillary Clinton) and the 3 trolls mentioned by other trolls. What we noticed is that in contrast to our expectation they did not mention that much Hillary Clinton nor Donald Trump (around 200 tweets out of more than a million). 
+
+![image1](https://github.com/adarmonicteam/adarmonicteam.github.io/blob/master/assets/images/trolls_mentioning_other_trolls.png)
+![image2](https://github.com/adarmonicteam/adarmonicteam.github.io/blob/master/assets/images/mentioned_users.png)
+
 
 
 ### Targetting Specific States
@@ -136,14 +142,17 @@ When a correlation coefficient is calculated that quantifies the relationship be
 
 {% include authorstate.html %}
 
-- Another analysis of the states over time was performed by classifying the account category as 'Right Troll' or 'Left Troll'. For each month in the dataset we filtered the number of tweets for each account category mentioning specific states or cities within those states. The interactive maps for the Right Trolls and the Left Trolls can be found below. There are two findings of this analysis. One finding is that the **Right Trolls generally did not take advantage of specific events to tweet about, while the Left Trolls did** (albeit to a limited extent). Another finding is that **events that trigger Right Trolls to tweet have the opposite effect on Left Trolls** and vice versa.
+- Another analysis of the states over time was performed by classifying the account category as 'Right Troll' or 'Left Troll'. For each month in the dataset we filtered the number of tweets for each account category mentioning specific states or cities within those states. The interactive maps for the Right Trolls and the Left Trolls can be found below. There are two findings of this analysis. One finding is that the **Right Trolls generally did not take advantage of specific state-related events to tweet about, while the Left Trolls did** (albeit to a limited extent). It may be more likely that the trolls were more interested in events that occured throughout the country in general, rather than filtering for state. Another finding is that **events that trigger Right Trolls to tweet have the opposite effect on Left Trolls** and vice versa.
   - Regarding the states, there was one event that caused a particularly massive outbreak of tweets from the Right Trolls. This event occured in December 2015. Inspection of the maps in this period reveals that there were 1460 tweets concerning California released by the Right Trolls and only a single tweet released by the Left Trolls. During this month a mass shooting and an attempted bombing occured in San Bernardino, California resulting in 14 killed and 22 seriously injured. The perpetrators were a married couple of Pakistani descent. It seems logical for the RightTrolls to tweet about this attack and use it to promote right wing agenda. Notably, the single Left Troll tweet was completely unrelated to this event, concerned about the Mosque Fire in Coachella. The RightTroll tweets contained sympathetic tweets such as:  
     - Examples of anti-gun law tweets
       > My heart goes out to the victims who were not so lucky  #Prayers4California"
+      as well as:
       > #SanBernardinoShooting displayes how inept and clueless anti-gun lawmakers are. #Prayers4California
+      and:
       > Guns are our friends because in a country without guns, I'm what's known as "prey." All females are. #Prayers4California
-      > Under Obama administration mass shootings happen every month! He wants to cover his ass with gun control! #Prayers4California
     - Criticism of the Obama administration
+      > Under Obama administration mass shootings happen every month! He wants to cover his ass with gun control! #Prayers4California
+      and:
       > #ObamaLogic: we can’t defeat ISIS? We definitely must ban guns #Prayers4California
     - Anti-muslim sentiments
       > #GunControl but not Muslim control? Jihad a part of Islam when not raping 6 yr old girls  #Prayers4California
@@ -151,25 +160,22 @@ When a correlation coefficient is calculated that quantifies the relationship be
   - Left Trolls were in a sense less extreme, but more consistent. With a maximum of 200 tweets per state per month, the Left Trolls targetted a variety of states, including Illinois, Mississippi and Alabama. A lot these tweets were related to social justice and the Black Lives Matter movement. Examples include the following:
     - For the event at Chicago Illinois in December 2015
       > Chicago Police Admit To Killing Innocent 55-Year-Old Woman By Accident #BlackMatters
+      and:
       > LIVE FEED FROM CHICAGO ANTI-MAYOR PRTOTEST #Chicago #Rahm #BlackLivesMatter #LaquanMcDonald #PoliceBrutality 
     - For the event in Mississippi that took place in February 2016. Notably a lot of these tweets were retweets or simply copies of the same tweet. This suspicious feature is analyzed in a proceeding section.
       > NewsOne Now Audio Podcast: Bishop E.W. Jackson Calls #BlackLivesMatter Is Movement “Disgraceful”
     - March 2016 marked the day of the 1965 Selma to Montgomery (cities in Alabama) march which focuses on African-American rights
       > I proud to be black!!! #SelmaToMontgomery1965
+      and:
       > I'm with Martin Luther king. Support everything he proposed #SelmaToMontgomery1965
 
 {% include left_troll_tweet_number.html %}
 
 {% include right_troll_tweet_number.html %}
 
-### Mentioning Specific Users
 
-We wanted to investigate who do the users mention in particular if they mention each other. We plotted the histogram of the trolls mentioned by other trolls and interestingly enough they only mention 13 trolls. All of these 13 troll’s accounts are categorized as HashtagGamer and except the first 3 they are mentioned only a number of times. For each of these 3 users we analyzed the 10 tweets with most replies, most likes and most retweets. Interestingly enough we did not feel that these tweets had a particular “trolling” message and some of them were the same for all the 3 users, with tweets such as: “#ThingsIWontBelieve this church sign https://t.co/BY7GlfV8X0” , “#IHatePokemonGoBecause There will be more distracted drivers”. Only in the 10 tweets with the most replies did we saw some tweets with a poitical side such as: “Obama is elected the 3rd time #MakeMeMadIn5Words”, “Why? And when will my people learn? Whites can’t be trusted #IStartCryingWhen https://t.co/GgDfyBZ5M7” and “#GrowingUpWithObama watching his ugly daughter in all networks https://t.co/Ip5EjlfDzI“. When we take the tweet about Obama being elected for the 3rd time two of the users tweeted it at the same exact time (to the hour). This fact made us do a further investigation into the subject that we will tackle later. We plotted the histogram of all the users mentioned by the trolls and as one can see the most mentioned user is: @midnight which is a late-night internet themed panel game show, while in red we marked the users we would expect to see mentioned (Donald Trump, Hillary Clinton) and the 3 trolls mentioned by other trolls. What we noticed is that in contrast to our expectation they did not mention that much Hillary Clinton nor Donald Trump (around 200 tweets out of more than a million). 
 
-![image1](https://github.com/adarmonicteam/adarmonicteam.github.io/blob/master/assets/images/trolls_mentioning_other_trolls.png)
-![image2](https://github.com/adarmonicteam/adarmonicteam.github.io/blob/master/assets/images/mentioned_users.png)
-
-## Do trolls re-write the same tweet?
+### Do trolls re-write the same tweet?
 We were interested to see if tweet contents are repeated several times. In order to do that we filtered the data to only contain tweets that were not labeled as a retweet and found that there are 16,707 tweets that appear more than once, 170 tweets that appear more than 10 times and 8 tweets that appear more than 30 times which are the tweets we focus on.  
 As the tweets are too long to show on any figure we created the following mapping:
 
@@ -195,4 +201,5 @@ We also wanted to see the times at which these tweets were published so we took 
 ![image5](https://adarmonicteam.github.io//assets//images//number_duplicates_dates.png)
 
 
-![useful image](https://adarmonicteam.github.io//assets//images//blackcloud.png)
+
+- These observations together show that a number of tactics were implemented by the Trolls, some of which were initiated without knowing what exactly would happen. In the following sections, we will attempt to quantify the success of the Trolls, and later try to understand better how they targetted different states.
