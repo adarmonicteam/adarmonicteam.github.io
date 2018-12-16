@@ -105,15 +105,80 @@ When a correlation coefficient is calculated that quantifies the relationship be
 
 ### Mentioning Specific Users
 
-To investigate wheather the users mention each others or other users by means of tags (denoted by the '@' symbol), an analysis was conducted by extracting unique users that were mentioned in tweets and quantifying their occurences. It appears that trolls do not tend to mention eachother - only 13 trolls were shown to name another fellow troll. The accounts belonging to these 13 trolls are categorized as HashtagGamer. Additionally, other than the leading 3 trolls, they are mentioned only a few times.
+To investigate whether the users mention eachother or other users by means of tags (denoted by the '@' symbol), an analysis was conducted by extracting unique users that were mentioned in tweets and quantifying their occurences. It appears that trolls do not tend to mention eachother - only 13 trolls were shown to name another fellow troll. The accounts belonging to these 13 trolls are categorized as HashtagGamer. Additionally, other than the leading 3 trolls, they are mentioned only a few times.
 
 ![image1](https://adarmonicteam.github.io/assets/images/trolls_mentioning_other_trolls.png)
 
-For the top 3 users, the 10 tweets with the most replies were analyzed we analyzed the 10 tweets with most replies, most likes and most retweets. These tweets did not have a particular “trolling” message and some of them were the same for all the 3 users, with tweets such as: “#ThingsIWontBelieve this church sign (link to picture)” and “#IHatePokemonGoBecause There will be more distracted drivers”.
+For the top 3 users, the 10 tweets with the most replies, likes and retweets were analyzed. These tweets did not have a particular “trolling” message. Additionally, some of the tweets were identical for all users, with tweets such as: “#ThingsIWontBelieve this church sign (link to picture)” and “#IHatePokemonGoBecause There will be more distracted drivers”.
 
-Only in the 10 tweets with the most replies did we saw some tweets with a poitical side such as: “Obama is elected the 3rd time #MakeMeMadIn5Words”, “Why? And when will my people learn? Whites can’t be trusted #IStartCryingWhen https://t.co/GgDfyBZ5M7” and “#GrowingUpWithObama watching his ugly daughter in all networks https://t.co/Ip5EjlfDzI“. When we take the tweet about Obama being elected for the 3rd time two of the users tweeted it at the same exact time (to the hour). This fact made us do a further investigation into the subject that we will tackle later. We plotted the histogram of all the users mentioned by the trolls and as one can see the most mentioned user is: @midnight which is a late-night internet themed panel game show, while in red we marked the users we would expect to see mentioned (Donald Trump, Hillary Clinton) and the 3 trolls mentioned by other trolls. What we noticed is that in contrast to our expectation they did not mention that much Hillary Clinton nor Donald Trump (around 200 tweets out of more than a million). 
+Only in the 10 tweets with the most replies did we see some tweets with a poitical side such as: 
+  > Obama is elected the 3rd time #MakeMeMadIn5Words
+  
+  and
+  
+  > Why? And when will my people learn? Whites can’t be trusted #IStartCryingWhen
+  
+  and
+  
+  > #GrowingUpWithObama watching his ugly daughter in all networks
+  
+  It should be noted that when the tweet 'Obama being elected for the 3rd time' was investigated, two of the users tweeted it at the same exact time (to the hour). This lead to an investigation which discussed is in the following section. By plotting the histogram of all the users mentioned by the trolls, it becomes evident that the most frequently mentioned user is **@midnight** which is a late-night internet themed panel game show. Users marked in red are those which one would expect to see mentioned (Donald Trump, Hillary Clinton) and the 3 trolls mentioned by other trolls. What we noticed is that in contrast to our expectation they did not mention Hillary Clinton nor Donald Trump all that much (around 200 tweets out of more than a million). 
 
 ![image2](https://adarmonicteam.github.io/assets/images/mentioned_users.png)
+
+### Identical Tweets and Different Authors
+
+We were interested to see if tweet contents are repeated several times. In order to do so, the data was filtered to only contain tweets that were not labeled as a retweet. The findings were that there are 16,707 tweets that appear more than once in the entire dataset, while there are 27 tweets that appear more than 15 times. The following analysis focuses on these 27 tweets.
+
+As the tweets are too long to show on any figure we created the following mapping:
+- Tweet 1: *NewsOne Now Audio Podcast: Bishop E.W. Jackson Calls #BlackLivesMatter Is Movement “Disgraceful”*
+- Tweet 2: *Honor scores  #sports*
+- Tweet 3: *SE Wis. road construction projects  #Wisconsin*
+- Tweet 4: *Celebrity style: Red carpet looks  #celebs #news*
+- Tweet 5: *Daily Celebrity Watch  #celebs #news*
+- Tweet 6: *RT @thehill: Trump repeatedly interrupted by protesters shouting #BlackLivesMatter*
+- Tweet 7: *On the Air  #sports*
+- Tweet 8: *Judge Rips Media*
+- Tweet 9: *RT @RNRIllinois: Remember Kids. Dont do CNN. Its a gateway Station that leads to other Liberal media. #RedNationRising #tcot #PJNET*
+- Tweet 10: *Winning numbers drawn in 'Triple Chance' game  #Texas*
+- Tweet 11: *RT @jstines3: It's not CLUMPS of TISSUE that move and smile and react!  #DefundPP #PPSellsBabyParts #TCOT #CCOT #PJNET*
+- Tweet 12: *TV/radio schedules  #sports*
+- Tweet 13: *GUIDE: What's up in Pittsburgh this weekend?  #entertainment*
+- Tweet 14: *#local #news AZ365: Arizona life 2016*
+- Tweet 15: *RT @mitchellvii: Dear #BlackLivesMatter: If you act in life as you acted at the Trump Rally, it ain't the white man who's holding you back*
+- Tweet 16: *Biggest and best upcoming events around Phoenix  #events*
+- Tweet 17: *RT @RNRIllinois: In this figure you can see how Socialism works at the Beach. #RedNationRising #tcot #FeelTheBern #UniteBlue #PJNET
+- Tweet 18: *RT @hannahkauthor: Some media are showing(manipulating and controlling) #Election2016 polls to confuse voters? #TGDN #PJNET #TCOT*
+- Tweet 19: *RT @peddoc63: Closest we have EVER been to Ronald Reagan is @tedcruz*
+- Tweet 20: *#politics How your U.S. lawmakers voted*
+- Tweet 21: *RT @josephjett: #Dependency on govt handouts, #welfare #affirmativeaction equate to #slavery We must say, Never Again! #BlackTwitter*
+- Tweet 22: *RT @tedcruz45: @tedcruz just knocked it out of the park at #CRconvention and won a LOT of votes in #SCPrimary! #TedCruz2016 #CruzCrew #PJNET*
+- Tweet 23: *RT @hannahkauthor: Just because he is the head of the Catholic Church, he is always right? #TGDN #PJNET #MakeAmericaGreatAgain @realDonaldTrump*
+- Tweet 24: *RT @jstines3: Cruz fights DC Cartel EVERY DAY, not just during Campaigns!  #WakeUpAmerica #CruzCrew #TrusTed #TCOT #PJNET*
+- Tweet 25: *RT @angelacarwile: .@cristinalaila1 @TRUCKITRICH Or what about the people harassed by #BlackLivesMatter?⏩@LorettaLynch Not an issue to you?*
+- Tweet 26: *RT @mitchellvii: #BlackLivesMatter is like a 24/7 advertisement for what a HORRIBLE DIVIDER Obama has been. Thanks guys, that much stupid*
+- Tweet 27: *RT @JaredWyand: Ive had death threats by HUNDREDS of #BlackLivesMatter activists this year  Ive killed 0 people  #IslamIsTheProblem*
+
+We noticed that some of them are political and some are more related to entertainment or sports. We wanted to explore some properties of these tweets and to see if these properties change via the nature of the tweet (political/non-political).
+We quantified the number of repetitions of each tweet in the whole data (excluding retweets), than we quantified how many distinct authors have tweeted each tweet and in how many distinct dates were these tweets tweeted.
+
+We can see the results in the bar plot below (political tweets are labeled in red)
+
+![image3](https://adarmonicteam.github.io//assets//images//number_duplicates.png)
+
+We noticed that no political tweet has more than 1 distinct author! To further investigate we plotted the number of distinct authors as a function of number of distinct dates for each tweet.
+
+![image4](https://adarmonicteam.github.io//assets//images//scatter.png)
+
+The scatter plot confirmed our believes that there is a clear difference between political tweets and non-political tweets.
+
+We decided to take the 16,707 tweets that appear more than once and re-do the same analysis automatically using our topic classifier. We classified all the tweets with topics (Crime/Sports/Entertainment/Health) as non-political and all the rest as political. 
+
+![image5](https://adarmonicteam.github.io//assets//images//scatter2.png)
+
+We do see the same behavior from the political tweets. We do not know if the change in behavior of the non-political tweets is due to misclassification of our classifier or due to the behavior of the trolls.
+
+Our hypothesis is that the reasons they are always multiple authors for political tweets is that the trolls had a database of tweets to use. As all political tweets have less than 20 distinct dates we believe they are coordinated to some extent. The reasons the non-political tweets have the same behavoir is that perhaps some of them are also in this database.
 
 
 
@@ -187,59 +252,6 @@ Only in the 10 tweets with the most replies did we saw some tweets with a poitic
 {% include right_troll_tweet_number.html %}
 
 
-
-### Do trolls re-write the same tweet?
-We were interested to see if tweet contents are repeated several times. In order to do that we filtered the data to only contain tweets that were not labeled as a retweet and found that there are 16,707 tweets that appear more than once, 170 tweets that appear more than 10 times, 27 tweets that appear more than 15 times and 8 tweets that appear more than 20 time. 
-We decided that 27 tweets is a good number to start analyzing from which is why we sorted all tweets that appear more than 15 times  in a descending order
-As the tweets are too long to show on any figure we created the following mapping:
-- Tweet 1: *NewsOne Now Audio Podcast: Bishop E.W. Jackson Calls #BlackLivesMatter Is Movement “Disgraceful”*
-- Tweet 2: *Honor scores  #sports*
-- Tweet 3: *SE Wis. road construction projects  #Wisconsin*
-- Tweet 4: *Celebrity style: Red carpet looks  #celebs #news*
-- Tweet 5: *Daily Celebrity Watch  #celebs #news*
-- Tweet 6: *RT @thehill: Trump repeatedly interrupted by protesters shouting #BlackLivesMatter*
-- Tweet 7: *On the Air  #sports*
-- Tweet 8: *Judge Rips Media*
-- Tweet 9: *RT @RNRIllinois: Remember Kids. Dont do CNN. Its a gateway Station that leads to other Liberal media. #RedNationRising #tcot #PJNET*
-- Tweet 10: *Winning numbers drawn in 'Triple Chance' game  #Texas*
-- Tweet 11: *RT @jstines3: It's not CLUMPS of TISSUE that move and smile and react!  #DefundPP #PPSellsBabyParts #TCOT #CCOT #PJNET*
-- Tweet 12: *TV/radio schedules  #sports*
-- Tweet 13: *GUIDE: What's up in Pittsburgh this weekend?  #entertainment*
-- Tweet 14: *#local #news AZ365: Arizona life 2016*
-- Tweet 15: *RT @mitchellvii: Dear #BlackLivesMatter: If you act in life as you acted at the Trump Rally, it ain't the white man who's holding you back*
-- Tweet 16: *Biggest and best upcoming events around Phoenix  #events*
-- Tweet 17: *RT @RNRIllinois: In this figure you can see how Socialism works at the Beach. #RedNationRising #tcot #FeelTheBern #UniteBlue #PJNET
-- Tweet 18: *RT @hannahkauthor: Some media are showing(manipulating and controlling) #Election2016 polls to confuse voters? #TGDN #PJNET #TCOT*
-- Tweet 19: *RT @peddoc63: Closest we have EVER been to Ronald Reagan is @tedcruz*
-- Tweet 20: *#politics How your U.S. lawmakers voted*
-- Tweet 21: *RT @josephjett: #Dependency on govt handouts, #welfare #affirmativeaction equate to #slavery We must say, Never Again! #BlackTwitter*
-- Tweet 22: *RT @tedcruz45: @tedcruz just knocked it out of the park at #CRconvention and won a LOT of votes in #SCPrimary! #TedCruz2016 #CruzCrew #PJNET*
-- Tweet 23: *RT @hannahkauthor: Just because he is the head of the Catholic Church, he is always right? #TGDN #PJNET #MakeAmericaGreatAgain @realDonaldTrump*
-- Tweet 24: *RT @jstines3: Cruz fights DC Cartel EVERY DAY, not just during Campaigns!  #WakeUpAmerica #CruzCrew #TrusTed #TCOT #PJNET*
-- Tweet 25: *RT @angelacarwile: .@cristinalaila1 @TRUCKITRICH Or what about the people harassed by #BlackLivesMatter?⏩@LorettaLynch Not an issue to you?*
-- Tweet 26: *RT @mitchellvii: #BlackLivesMatter is like a 24/7 advertisement for what a HORRIBLE DIVIDER Obama has been. Thanks guys, that much stupid*
-- Tweet 27: *RT @JaredWyand: Ive had death threats by HUNDREDS of #BlackLivesMatter activists this year  Ive killed 0 people  #IslamIsTheProblem*
-
-We noticed that some of them are political and some are more related to entertainment or sports. We wanted to explore some properties of these tweets and to see if these properties change via the nature of the tweet (political/non-political).
-We quantified the number of repetitions of each tweet in the whole data (excluding retweets), than we quantified how many distinct authors have tweeted each tweet and in how many distinct dates were these tweets tweeted.
-
-We can see the results in the bar plot below (political tweets are labeled in red)
-
-![image3](https://adarmonicteam.github.io//assets//images//number_duplicates.png)
-
-We noticed that no political tweet has more than 1 distinct author! To further investigate we plotted the number of distinct authors as a function of number of distinct dates for each tweet.
-
-![image4](https://adarmonicteam.github.io//assets//images//scatter.png)
-
-The scatter plot confirmed our believes that there is a clear difference between political tweets and non-political tweets.
-
-We decided to take the 16,707 tweets that appear more than once and re-do the same analysis automatically using our topic classifier. We classified all the tweets with topics (Crime/Sports/Entertainment/Health) as non-political and all the rest as political. 
-
-![image5](https://adarmonicteam.github.io//assets//images//scatter2.png)
-
-We do see the same behavior from the political tweets. We do not know if the change in behavior of the non-political tweets is due to misclassification of our classifier or due to the behavior of the trolls.
-
-Our hypothesis is that the reasons they are always multiple authors for political tweets is that the trolls had a database of tweets to use. As all political tweets have less than 20 distinct dates we believe they are coordinated to some extent. The reasons the non-political tweets have the same behavoir is that perhaps some of them are also in this database.
 
 
 
